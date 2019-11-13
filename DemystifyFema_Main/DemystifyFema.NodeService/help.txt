@@ -1,0 +1,78 @@
+
+CALLBACK_URL:"http://127.0.0.1:3000/callback/"
+CHANNEL_ID:"WEB"
+CUST_ID:"24"
+EMAIL:"angular1583@gmail.com"
+INDUSTRY_TYPE_ID:"Retail"
+MID:"VIAZTz50949725542761"
+MOBILE_NO:"7777777777"
+ORDER_ID:"ord62166747"
+TXN_AMOUNT:"5000"
+WEBSITE:"WEBSTAGING"
+"TXRHKPgNOnsCKfSbbBUCbe4m2jWW5Ldgd8tgqLYBpxxHArH5d/2MD7HE4GHKfvgOdGeHviyw4brmAtVBmaOWMkbNp88CYxUWhd6yRZlFMHA="
+
+
+CALLBACK_URL: "http://127.0.0.1:3000/callback/"
+CHANNEL_ID: "WEB"
+CHECKSUMHASH: "TXRHKPgNOnsCKfSbbBUCbe4m2jWW5Ldgd8tgqLYBpxxHArH5d/2MD7HE4GHKfvgOdGeHviyw4brmAtVBmaOWMkbNp88CYxUWhd6yRZlFMHA="
+CUST_ID: "24"
+EMAIL: "angular1583@gmail.com"
+INDUSTRY_TYPE_ID: "Retail"
+MID: "VIAZTz50949725542761"
+MOBILE_NO: "7777777777"
+ORDER_ID: "ord62166747"
+TXN_AMOUNT: "5000"
+WEBSITE: "WEBSTAGING"
+
+
+
+CALLBACK_URL: "http://127.0.0.1:3000/callback/"
+CHANNEL_ID: "WEB"
+CHECKSUMHASH: "tfwXyu6C4N3SYaZ3toyAGAbVmbHYmS18RO7Uyy8ALiC+Ss0DQN7ojIkhNtUSKrwkmCQZQTSCm6gZGp/NJUYD6bV83AJvPe/ACfrMS7G+E/Y="
+CUST_ID: "24"
+EMAIL: "angular1583@gmail.com"
+INDUSTRY_TYPE_ID: "Retail"
+MID: "VIAZTz50949725542761"
+MOBILE_NO: "7777777777"
+ORDER_ID: "ord66631025"
+TXN_AMOUNT: "5000"
+WEBSITE: "WEBSTAGING"
+__proto__: Object
+
+
+
+,"head":{"clientId":"C11","version":"v1","requestTimestamp":xxxxxxxxxx,"channelId":"WEB","signature":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx+xxxxxx="}}
+
+create subscription
+https://securegw-stage.paytm.in/subscription/create?mid=VIAZTz50949725542761&orderId=ORDER_5263
+
+
+
+
+CALLBACK_URL:"http://127.0.0.1:3000/callback/"
+CHANNEL_ID:"WEB"
+CUST_ID:"24"
+EMAIL:"shingalahitesh1583@gmail.com"
+INDUSTRY_TYPE_ID:"Retail"
+MID:"VIAZTz50949725542761"
+MOBILE_NO:"8140823509"
+ORDER_ID:"test_order-id515153"
+TXN_AMOUNT:"5000"
+WEBSITE:"WEBSTAGING"
+
+CALLBACK_URL: "http://127.0.0.1:3000/callback/"
+CHANNEL_ID: "WEB"
+CHECKSUMHASH: undefined
+CUST_ID: "24"
+EMAIL: "shingalahitesh1583@gmail.com"
+INDUSTRY_TYPE_ID: "Retail"
+MID: "VIAZTz50949725542761"
+MOBILE_NO: "8140823509"
+ORDER_ID: "test_order-id515153"
+TXN_AMOUNT: "5000"
+WEBSITE: "WEBSTAGING"
+
+
+http://servicebeta.demystifyfema.com/user/api/subscriptions?UserId=1109
+
+{"Status":"Success","Description":"Subscription retrieved successfully","Response":[{"SubscriptionId":39,"UserId":1109,"UserName":"shingalahitesh2@gmail.com","PackageId":4,"PackageName":"test","SubscriptionStatus":null,"StartDate":null,"EndDate":null,"PaymentDate":null,"Amount":12500.00,"IsExpired":false,"IsPending":true,"IsCanceled":false,"CancellationDate":null,"ActivationDate":null,"IsActive":true,"IsLegalAgreementAccepted":false,"CreatedBy":1109,"TotalPageCount":0,"TotalRecord":0}]}

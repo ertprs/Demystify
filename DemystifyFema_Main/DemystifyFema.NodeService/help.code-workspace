@@ -1,0 +1,26 @@
+{
+    "body": {
+        "requestType": "NATIVE_SUBSCRIPTION",
+        "mid": "VIAZTz50949725542761",
+        "websiteName": "dineoutWEB",
+        "orderId": "ORDER_5263",
+        "subscriptionPaymentMode": "PPI",
+        "subscriptionAmountType": "VARIABLE",
+        "txnAmount": {
+            "value": "100.00",
+            "currency": "INR"
+        },
+        "subscriptionMaxAmount": "200.00",
+        "subscriptionFrequency": "1",
+        "subscriptionFrequencyUnit": "MONTH",
+        "subscriptionStartDate": "2019-05-01",
+        "subscriptionExpiryDate": "2019-12-31",
+        "subscriptionGraceDays": "5",
+        "subscriptionEnableRetry": "1",
+        "subscriptionRetryCount": "3",
+        "userInfo": {
+            "custId": "C11"
+        },
+        "paytmSsoToken": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "callbackUrl": "http://127.0.0.1:3000/callback/"
+    }

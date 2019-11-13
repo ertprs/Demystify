@@ -1,0 +1,21 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DemystifyFema.NodeService",
+    "\\DemystifyFema.NodeService\\routes",
+    "\\DemystifyFema.Service",
+    "\\DemystifyFema.Service\\Controllers",
+    "\\DemystifyFema.Service\\Controllers\\User",
+    "\\DemystifyFema.Web",
+    "\\DemystifyFema.Web\\src",
+    "\\DemystifyFema.Web\\src\\app",
+    "\\DemystifyFema.Web\\src\\app\\areas",
+    "\\DemystifyFema.Web\\src\\app\\areas\\user",
+    "\\DemystifyFema.Web\\src\\app\\areas\\user\\subscription",
+    "\\DemystifyFema.Web\\src\\app\\common",
+    "\\DemystifyFema.Web\\src\\app\\service",
+    "\\DemystifyFema.Web\\src\\app\\service\\user"
+  ],
+  "SelectedNode": "\\DemystifyFema.Service\\Controllers\\UtilityController.cs",
+  "PreviewInSolutionExplorer": false
+}
