@@ -1,0 +1,41 @@
+﻿<div class="portlet box green">
+    <div class="portlet-title col-md-12">
+        <div class="caption col-md-6">
+            <i class="fa fa-tasks"></i>{{addUpdateText}} Subscription Package
+        </div>
+    </div>
+    <div class="portlet-body">
+        <form novalidate (ngSubmit)="OnSubmitSubscriptionPackage(frmSubscriptionPackage)" [formGroup]="frmSubscriptionPackage">
+            <div class="row" style="margin-bottom:15px;">
+                <div class="col-md-4">
+                    <div class="form-group form-md-line-input no-margin">
+                        <input type="text" class="form-control" formControlName="PackageName" id="txtPackageName" />
+                        <label for="txtPackageName">Package Name</label>
+                    </div>
+                    <span class="help-block has-error" *ngIf="frmSubscriptionPackage.controls.PackageName.errors?.required && isSubmited"> Please enter Package Name </span>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group form-md-line-input no-margin">
+                       <input type="text" class="form-control" (keypress)="numberOnly($event)" formControlName="PackageAmount" id="txtPackageAmount" />
+                       <label for="txtPackageAmount">Amount &nbsp;&nbsp;(&nbsp;<i class="fa fa-inr"></i>&nbsp;)</label>
+                    </div>
+                    <span class="help-block has-error" *ngIf="frmSubscriptionPackage.controls.PackageAmount.errors?.required && isSubmited"> Please enter Amount </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group form-md-line-input no-margin">
+                        <textarea rows="4" class="form-control" formControlName="PackageDetail" id="txtPackageDetail"></textarea>
+                        <label for="txtPackageDetail">Details</label>
+                    </div>
+                    <span class="help-block has-error" *ngIf="frmSubscriptionPackage.controls.PackageDetail.errors?.required && isSubmited"> Please enter Details </span>
+                </div>
+            </div>
+
+            <div class="form-actions text-right btn-outer-background no-space-right form-actions-bottom-padding row-top-margin">
+                <a (click)="CancelSubscriptionPackage()" class="btn btn-default">Back To List</a>
+                <input class="btn btn-primary btn-cancel-margin" type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</div>

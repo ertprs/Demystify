@@ -1,0 +1,19 @@
+﻿.enquirybtn {
+    position: fixed;
+    font-weight: 600;
+    z-index: 100;
+    width: 55px;
+    height: 55px;
+    margin-right: -56px;
+    bottom: 94px;
+    font-size: 16px;
+    color: white;
+    background: #1bd741;
+    padding: 8px;
+    right: 86px;
+    border-radius: 50%;
+    display: block;
+}
+.enquirybtn:hover {
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7)
+}

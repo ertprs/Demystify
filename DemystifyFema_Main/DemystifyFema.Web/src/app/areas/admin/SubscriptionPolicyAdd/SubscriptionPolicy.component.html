@@ -1,0 +1,36 @@
+﻿<div class="portlet box green">
+    <div class="portlet-title col-md-12">
+        <div class="caption col-md-6">
+            <i class="fa fa-tasks"></i>Subscription Policy
+        </div>
+    </div>
+    <div class="portlet-body">
+        <form novalidate (ngSubmit)="OnSubmitIndexAmendment(frmSubscriptionPolicy)" [formGroup]="frmSubscriptionPolicy">
+            <div class="row" style="margin-bottom:15px;">
+                <!--<div class="col-md-12" formArrayName="SubscriptionPolicyContent" *ngFor="let item of frmSubscriptionPolicy.controls.SubscriptionPolicyContent['controls']; let i = index;">
+                    <div class="form-group form-md-line-input no-margin" [formGroupName]="i">
+                        <a (click)="RemoveCKEditor(i)" class="close-button" *ngIf="SubscriptionPolicyContent && SubscriptionPolicyContent.length > 1">x</a>
+                        <ckeditor formControlName="Content"
+                                  [readonly]="false"
+                                  debounce="500">
+                        </ckeditor>
+                    </div>-->
+                <!--<span class="help-block has-error" *ngIf="!frmIndexAmendment.controls.IndexAmendmentContent.controls[i].value.Content && isSubmited"> Please enter Index Amendment Content {{i+1}} </span>-->
+                <!--</div>-->
+                <div class="col-md-12">
+                    <div class="form-group form-md-line-input no-margin">
+                        <ckeditor formControlName="Content"
+                                  [readonly]="false"
+                                  debounce="500">
+                        </ckeditor>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions text-right btn-outer-background no-space-right form-actions-bottom-padding row-top-margin">
+                <!--<a (click)="CancelIndexAmendment()" class="btn btn-default">Back To List</a>-->
+                <input class="btn btn-primary btn-cancel-margin" type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</div>

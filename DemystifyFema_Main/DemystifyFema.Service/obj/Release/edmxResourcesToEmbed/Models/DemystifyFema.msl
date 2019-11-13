@@ -1,0 +1,1896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DemsifyModelStoreContainer" CdmEntityContainer="DemsifyEntities">
+    <FunctionImportMapping FunctionImportName="AccessTokenCheck" FunctionName="DemsifyModel.Store.AccessTokenCheck" />
+    <FunctionImportMapping FunctionImportName="LoginHistoryAdd" FunctionName="DemsifyModel.Store.LoginHistoryAdd" />
+    <FunctionImportMapping FunctionImportName="LoginWithAdmin" FunctionName="DemsifyModel.Store.LoginWithAdmin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.LoginWithAdmin_Result">
+          <ScalarProperty Name="AID" ColumnName="AID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Logout" FunctionName="DemsifyModel.Store.Logout" />
+    <FunctionImportMapping FunctionImportName="UserGet" FunctionName="DemsifyModel.Store.UserGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.UserGet_Result">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="MobileOTP" ColumnName="MobileOTP" />
+          <ScalarProperty Name="EmailOTP" ColumnName="EmailOTP" />
+          <ScalarProperty Name="VerificationToken" ColumnName="VerificationToken" />
+          <ScalarProperty Name="IsVerified" ColumnName="IsVerified" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="MailSentDate" ColumnName="MailSentDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ActNameAdd" FunctionName="DemsifyModel.Store.ActNameAdd" />
+    <FunctionImportMapping FunctionImportName="ActNameDelete" FunctionName="DemsifyModel.Store.ActNameDelete" />
+    <FunctionImportMapping FunctionImportName="ActNameUpdate" FunctionName="DemsifyModel.Store.ActNameUpdate" />
+    <FunctionImportMapping FunctionImportName="ActNameGet" FunctionName="DemsifyModel.Store.ActNameGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.ActNameGet_Result">
+          <ScalarProperty Name="ActID" ColumnName="ActID" />
+          <ScalarProperty Name="LongTitle" ColumnName="LongTitle" />
+          <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="ActPDF" ColumnName="ActPDF" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AllDefinitionAdd" FunctionName="DemsifyModel.Store.AllDefinitionAdd" />
+    <FunctionImportMapping FunctionImportName="AllDefinitionDelete" FunctionName="DemsifyModel.Store.AllDefinitionDelete" />
+    <FunctionImportMapping FunctionImportName="AllDefinitionGet" FunctionName="DemsifyModel.Store.AllDefinitionGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.AllDefinitionGet_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DefinitionName" ColumnName="DefinitionName" />
+          <ScalarProperty Name="FullDInsertion" ColumnName="FullDInsertion" />
+          <ScalarProperty Name="Heads" ColumnName="Heads" />
+          <ScalarProperty Name="DVide" ColumnName="DVide" />
+          <ScalarProperty Name="AuthorNote" ColumnName="AuthorNote" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EnteredDate" ColumnName="EnteredDate" />
+          <ScalarProperty Name="ActId" ColumnName="ActId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AllDefinitionUpdate" FunctionName="DemsifyModel.Store.AllDefinitionUpdate" />
+    <FunctionImportMapping FunctionImportName="RegulationAdd" FunctionName="DemsifyModel.Store.RegulationAdd" />
+    <FunctionImportMapping FunctionImportName="RegulationDelete" FunctionName="DemsifyModel.Store.RegulationDelete" />
+    <FunctionImportMapping FunctionImportName="RegulationGet" FunctionName="DemsifyModel.Store.RegulationGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RegulationGet_Result">
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="Regulationname" ColumnName="Regulationname" />
+          <ScalarProperty Name="Regulationnumber" ColumnName="Regulationnumber" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PublicationDate" ColumnName="PublicationDate" />
+          <ScalarProperty Name="Dateofpublication" ColumnName="Dateofpublication" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+          <ScalarProperty Name="SortID" ColumnName="SortID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RegulationUpdate" FunctionName="DemsifyModel.Store.RegulationUpdate" />
+    <FunctionImportMapping FunctionImportName="FemaindexAdd" FunctionName="DemsifyModel.Store.FemaindexAdd" />
+    <FunctionImportMapping FunctionImportName="FemaindexDelete" FunctionName="DemsifyModel.Store.FemaindexDelete" />
+    <FunctionImportMapping FunctionImportName="FemaindexGet" FunctionName="DemsifyModel.Store.FemaindexGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FemaindexGet_Result">
+          <ScalarProperty Name="Indexid" ColumnName="Indexid" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="Notificationid" ColumnName="Notificationid" />
+          <ScalarProperty Name="IndexNo" ColumnName="IndexNo" />
+          <ScalarProperty Name="Indexname" ColumnName="Indexname" />
+          <ScalarProperty Name="FemaId" ColumnName="FemaId" />
+          <ScalarProperty Name="UpdatedIndexNo" ColumnName="UpdatedIndexNo" />
+          <ScalarProperty Name="UpdatedIndexName" ColumnName="UpdatedIndexName" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="IndexContent" ColumnName="IndexContent" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FemaindexUpdate" FunctionName="DemsifyModel.Store.FemaindexUpdate" />
+    <FunctionImportMapping FunctionImportName="FemaSubIndexAdd" FunctionName="DemsifyModel.Store.FemaSubIndexAdd" />
+    <FunctionImportMapping FunctionImportName="FemaSubIndexDelete" FunctionName="DemsifyModel.Store.FemaSubIndexDelete" />
+    <FunctionImportMapping FunctionImportName="FemaSubIndexGet" FunctionName="DemsifyModel.Store.FemaSubIndexGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FemaSubIndexGet_Result">
+          <ScalarProperty Name="FemaSubIndexId" ColumnName="FemaSubIndexId" />
+          <ScalarProperty Name="IndexId" ColumnName="IndexId" />
+          <ScalarProperty Name="SubIndexNumber" ColumnName="SubIndexNumber" />
+          <ScalarProperty Name="SubIndexName" ColumnName="SubIndexName" />
+          <ScalarProperty Name="SubIndexContent" ColumnName="SubIndexContent" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FemaSubIndexUpdate" FunctionName="DemsifyModel.Store.FemaSubIndexUpdate" />
+    <FunctionImportMapping FunctionImportName="NotificationAdd" FunctionName="DemsifyModel.Store.NotificationAdd" />
+    <FunctionImportMapping FunctionImportName="NotificationDelete" FunctionName="DemsifyModel.Store.NotificationDelete" />
+    <FunctionImportMapping FunctionImportName="NotificationGet" FunctionName="DemsifyModel.Store.NotificationGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.NotificationGet_Result">
+          <ScalarProperty Name="Notificationid" ColumnName="Notificationid" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="DeletedIndexId" ColumnName="DeletedIndexId" />
+          <ScalarProperty Name="DeletedSubIndexId" ColumnName="DeletedSubIndexId" />
+          <ScalarProperty Name="Femaname" ColumnName="Femaname" />
+          <ScalarProperty Name="Notificationnumber" ColumnName="Notificationnumber" />
+          <ScalarProperty Name="Typeofnotification" ColumnName="Typeofnotification" />
+          <ScalarProperty Name="Femadate" ColumnName="Femadate" />
+          <ScalarProperty Name="GSRNo" ColumnName="GSRNo" />
+          <ScalarProperty Name="GSRDate" ColumnName="GSRDate" />
+          <ScalarProperty Name="effectivedateofrbinotification" ColumnName="effectivedateofrbinotification" />
+          <ScalarProperty Name="Relativeapdir" ColumnName="Relativeapdir" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="NotificationPDF" ColumnName="NotificationPDF" />
+          <ScalarProperty Name="GSRPDF" ColumnName="GSRPDF" />
+          <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+          <ScalarProperty Name="HeaderNote" ColumnName="HeaderNote" />
+          <ScalarProperty Name="FooterNote" ColumnName="FooterNote" />
+          <ScalarProperty Name="Nameofoffice" ColumnName="Nameofoffice" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="NotificationName" ColumnName="NotificationName" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="NotificationDate" ColumnName="NotificationDate" />
+          <ScalarProperty Name="NotificationTypeId" ColumnName="NotificationTypeId" />
+          <ScalarProperty Name="NotificationTypeName" ColumnName="NotificationTypeName" />
+          <ScalarProperty Name="NotificationEffectiveDate" ColumnName="NotificationEffectiveDate" />
+          <ScalarProperty Name="Regulationnumber" ColumnName="Regulationnumber" />
+          <ScalarProperty Name="MasterDirectionId" ColumnName="MasterDirectionId" />
+          <ScalarProperty Name="MasterDIrectionName" ColumnName="MasterDIrectionName" />
+          <ScalarProperty Name="Regulationname" ColumnName="Regulationname" />
+          <ScalarProperty Name="SectorIds" ColumnName="SectorIds" />
+          <ScalarProperty Name="SubSectorIds" ColumnName="SubSectorIds" />
+          <ScalarProperty Name="SectorNames" ColumnName="SectorNames" />
+          <ScalarProperty Name="SubSectorNames" ColumnName="SubSectorNames" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="NotificationUpdate" FunctionName="DemsifyModel.Store.NotificationUpdate" />
+    <FunctionImportMapping FunctionImportName="NotificationTypeGet" FunctionName="DemsifyModel.Store.NotificationTypeGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.NotificationTypeGet_Result">
+          <ScalarProperty Name="NotificationTypeId" ColumnName="NotificationTypeId" />
+          <ScalarProperty Name="NotificationTypeName" ColumnName="NotificationTypeName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IndexAmendmentAdd" FunctionName="DemsifyModel.Store.IndexAmendmentAdd" />
+    <FunctionImportMapping FunctionImportName="IndexAmendmentDelete" FunctionName="DemsifyModel.Store.IndexAmendmentDelete" />
+    <FunctionImportMapping FunctionImportName="IndexAmendmentGet" FunctionName="DemsifyModel.Store.IndexAmendmentGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.IndexAmendmentGet_Result">
+          <ScalarProperty Name="IndexAmendmentId" ColumnName="IndexAmendmentId" />
+          <ScalarProperty Name="RegulationId" ColumnName="RegulationId" />
+          <ScalarProperty Name="IndexId" ColumnName="IndexId" />
+          <ScalarProperty Name="SubIndexId" ColumnName="SubIndexId" />
+          <ScalarProperty Name="IndexAmendmentContent" ColumnName="IndexAmendmentContent" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="IndexNo" ColumnName="IndexNo" />
+          <ScalarProperty Name="SubIndexNumber" ColumnName="SubIndexNumber" />
+          <ScalarProperty Name="Indexname" ColumnName="Indexname" />
+          <ScalarProperty Name="SubIndexName" ColumnName="SubIndexName" />
+          <ScalarProperty Name="Regulationname" ColumnName="Regulationname" />
+          <ScalarProperty Name="Regulationnumber" ColumnName="Regulationnumber" />
+          <ScalarProperty Name="NotificationIds" ColumnName="NotificationIds" />
+          <ScalarProperty Name="Notifications" ColumnName="Notifications" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IndexAmendmentUpdate" FunctionName="DemsifyModel.Store.IndexAmendmentUpdate" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularAdd" FunctionName="DemsifyModel.Store.APDIRCircularAdd" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularDelete" FunctionName="DemsifyModel.Store.APDIRCircularDelete" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularGet" FunctionName="DemsifyModel.Store.APDIRCircularGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.APDIRCircularGet_Result">
+          <ScalarProperty Name="APDIRCircularId" ColumnName="APDIRCircularId" />
+          <ScalarProperty Name="APDIRCircularNo" ColumnName="APDIRCircularNo" />
+          <ScalarProperty Name="APDIRCircularName" ColumnName="APDIRCircularName" />
+          <ScalarProperty Name="APDIRCircularDate" ColumnName="APDIRCircularDate" />
+          <ScalarProperty Name="APDIRCircularEffectiveDate" ColumnName="APDIRCircularEffectiveDate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="MasterDirectionId" ColumnName="MasterDirectionId" />
+          <ScalarProperty Name="MasterDIrectionName" ColumnName="MasterDIrectionName" />
+          <ScalarProperty Name="SectorNames" ColumnName="SectorNames" />
+          <ScalarProperty Name="SubSectorNames" ColumnName="SubSectorNames" />
+          <ScalarProperty Name="SectorIds" ColumnName="SectorIds" />
+          <ScalarProperty Name="SubSectorIds" ColumnName="SubSectorIds" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="APDIRCircularUpdate" FunctionName="DemsifyModel.Store.APDIRCircularUpdate" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularAfterAdd" FunctionName="DemsifyModel.Store.APDIRCircularAfterAdd" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularAfterDelete" FunctionName="DemsifyModel.Store.APDIRCircularAfterDelete" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularAfterGet" FunctionName="DemsifyModel.Store.APDIRCircularAfterGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.APDIRCircularAfterGet_Result">
+          <ScalarProperty Name="APDIRCircularAfterId" ColumnName="APDIRCircularAfterId" />
+          <ScalarProperty Name="APDIRCircularParentId" ColumnName="APDIRCircularParentId" />
+          <ScalarProperty Name="APDIRCircularId" ColumnName="APDIRCircularId" />
+          <ScalarProperty Name="APDIRCircularNo" ColumnName="APDIRCircularNo" />
+          <ScalarProperty Name="APDIRCircularName" ColumnName="APDIRCircularName" />
+          <ScalarProperty Name="APDIRCircularDate" ColumnName="APDIRCircularDate" />
+          <ScalarProperty Name="APDIRCircularEffectiveDate" ColumnName="APDIRCircularEffectiveDate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="APDIRCircularAfterUpdate" FunctionName="DemsifyModel.Store.APDIRCircularAfterUpdate" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularBeforeAdd" FunctionName="DemsifyModel.Store.APDIRCircularBeforeAdd" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularBeforeDelete" FunctionName="DemsifyModel.Store.APDIRCircularBeforeDelete" />
+    <FunctionImportMapping FunctionImportName="APDIRCircularBeforeGet" FunctionName="DemsifyModel.Store.APDIRCircularBeforeGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.APDIRCircularBeforeGet_Result">
+          <ScalarProperty Name="APDIRCircularBeforeId" ColumnName="APDIRCircularBeforeId" />
+          <ScalarProperty Name="APDIRCircularParentId" ColumnName="APDIRCircularParentId" />
+          <ScalarProperty Name="APDIRCircularId" ColumnName="APDIRCircularId" />
+          <ScalarProperty Name="APDIRCircularNo" ColumnName="APDIRCircularNo" />
+          <ScalarProperty Name="APDIRCircularName" ColumnName="APDIRCircularName" />
+          <ScalarProperty Name="APDIRCircularDate" ColumnName="APDIRCircularDate" />
+          <ScalarProperty Name="APDIRCircularEffectiveDate" ColumnName="APDIRCircularEffectiveDate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="APDIRCircularBeforeUpdate" FunctionName="DemsifyModel.Store.APDIRCircularBeforeUpdate" />
+    <FunctionImportMapping FunctionImportName="PressNoteAdd" FunctionName="DemsifyModel.Store.PressNoteAdd" />
+    <FunctionImportMapping FunctionImportName="PressNoteDelete" FunctionName="DemsifyModel.Store.PressNoteDelete" />
+    <FunctionImportMapping FunctionImportName="PressNoteGet" FunctionName="DemsifyModel.Store.PressNoteGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.PressNoteGet_Result">
+          <ScalarProperty Name="PressNoteId" ColumnName="PressNoteId" />
+          <ScalarProperty Name="PressNoteNo" ColumnName="PressNoteNo" />
+          <ScalarProperty Name="PressNoteName" ColumnName="PressNoteName" />
+          <ScalarProperty Name="PressNoteDate" ColumnName="PressNoteDate" />
+          <ScalarProperty Name="PressNoteEffectiveDate" ColumnName="PressNoteEffectiveDate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SectorIds" ColumnName="SectorIds" />
+          <ScalarProperty Name="SubSectorIds" ColumnName="SubSectorIds" />
+          <ScalarProperty Name="SectorNames" ColumnName="SectorNames" />
+          <ScalarProperty Name="SubSectorNames" ColumnName="SubSectorNames" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PressNoteUpdate" FunctionName="DemsifyModel.Store.PressNoteUpdate" />
+    <FunctionImportMapping FunctionImportName="PressNoteAPDIRCircularAdd" FunctionName="DemsifyModel.Store.PressNoteAPDIRCircularAdd" />
+    <FunctionImportMapping FunctionImportName="PressNoteAPDIRCircularDelete" FunctionName="DemsifyModel.Store.PressNoteAPDIRCircularDelete" />
+    <FunctionImportMapping FunctionImportName="PressNoteAPDIRCircularGet" FunctionName="DemsifyModel.Store.PressNoteAPDIRCircularGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.PressNoteAPDIRCircularGet_Result">
+          <ScalarProperty Name="PressNoteAPDIRCircularId" ColumnName="PressNoteAPDIRCircularId" />
+          <ScalarProperty Name="PressNoteId" ColumnName="PressNoteId" />
+          <ScalarProperty Name="APDIRCircularId" ColumnName="APDIRCircularId" />
+          <ScalarProperty Name="APDIRCircularNo" ColumnName="APDIRCircularNo" />
+          <ScalarProperty Name="APDIRCircularName" ColumnName="APDIRCircularName" />
+          <ScalarProperty Name="APDIRCircularDate" ColumnName="APDIRCircularDate" />
+          <ScalarProperty Name="APDIRCircularEffectiveDate" ColumnName="APDIRCircularEffectiveDate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PressNoteAPDIRCircularUpdate" FunctionName="DemsifyModel.Store.PressNoteAPDIRCircularUpdate" />
+    <FunctionImportMapping FunctionImportName="PressNoteNotificationAdd" FunctionName="DemsifyModel.Store.PressNoteNotificationAdd" />
+    <FunctionImportMapping FunctionImportName="PressNoteNotificationDelete" FunctionName="DemsifyModel.Store.PressNoteNotificationDelete" />
+    <FunctionImportMapping FunctionImportName="PressNoteNotificationGet" FunctionName="DemsifyModel.Store.PressNoteNotificationGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.PressNoteNotificationGet_Result">
+          <ScalarProperty Name="PressNoteNotificationId" ColumnName="PressNoteNotificationId" />
+          <ScalarProperty Name="PressNoteId" ColumnName="PressNoteId" />
+          <ScalarProperty Name="Notificationid" ColumnName="Notificationid" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="DeletedIndexId" ColumnName="DeletedIndexId" />
+          <ScalarProperty Name="DeletedSubIndexId" ColumnName="DeletedSubIndexId" />
+          <ScalarProperty Name="Femaname" ColumnName="Femaname" />
+          <ScalarProperty Name="Notificationnumber" ColumnName="Notificationnumber" />
+          <ScalarProperty Name="Typeofnotification" ColumnName="Typeofnotification" />
+          <ScalarProperty Name="Femadate" ColumnName="Femadate" />
+          <ScalarProperty Name="GSRNo" ColumnName="GSRNo" />
+          <ScalarProperty Name="GSRDate" ColumnName="GSRDate" />
+          <ScalarProperty Name="effectivedateofrbinotification" ColumnName="effectivedateofrbinotification" />
+          <ScalarProperty Name="Relativeapdir" ColumnName="Relativeapdir" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="NotificationPDF" ColumnName="NotificationPDF" />
+          <ScalarProperty Name="GSRPDF" ColumnName="GSRPDF" />
+          <ScalarProperty Name="ShortTitle" ColumnName="ShortTitle" />
+          <ScalarProperty Name="HeaderNote" ColumnName="HeaderNote" />
+          <ScalarProperty Name="FooterNote" ColumnName="FooterNote" />
+          <ScalarProperty Name="Nameofoffice" ColumnName="Nameofoffice" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="NotificationName" ColumnName="NotificationName" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="NotificationDate" ColumnName="NotificationDate" />
+          <ScalarProperty Name="NotificationEffectiveDate" ColumnName="NotificationEffectiveDate" />
+          <ScalarProperty Name="NotificationTypeId" ColumnName="NotificationTypeId" />
+          <ScalarProperty Name="NotificationTypeName" ColumnName="NotificationTypeName" />
+          <ScalarProperty Name="Regulationnumber" ColumnName="Regulationnumber" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PressNoteNotificationUpdate" FunctionName="DemsifyModel.Store.PressNoteNotificationUpdate" />
+    <FunctionImportMapping FunctionImportName="FDICircularAdd" FunctionName="DemsifyModel.Store.FDICircularAdd" />
+    <FunctionImportMapping FunctionImportName="FDICircularDelete" FunctionName="DemsifyModel.Store.FDICircularDelete" />
+    <FunctionImportMapping FunctionImportName="FDICircularGet" FunctionName="DemsifyModel.Store.FDICircularGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FDICircularGet_Result">
+          <ScalarProperty Name="FDICircularId" ColumnName="FDICircularId" />
+          <ScalarProperty Name="FDICircularName" ColumnName="FDICircularName" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FDICircularIndexAdd" FunctionName="DemsifyModel.Store.FDICircularIndexAdd" />
+    <FunctionImportMapping FunctionImportName="FDICircularIndexAmendmentAdd" FunctionName="DemsifyModel.Store.FDICircularIndexAmendmentAdd" />
+    <FunctionImportMapping FunctionImportName="FDICircularIndexAmendmentDelete" FunctionName="DemsifyModel.Store.FDICircularIndexAmendmentDelete" />
+    <FunctionImportMapping FunctionImportName="FDICircularIndexAmendmentGet" FunctionName="DemsifyModel.Store.FDICircularIndexAmendmentGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FDICircularIndexAmendmentGet_Result">
+          <ScalarProperty Name="FDICircularIndexAmendmentId" ColumnName="FDICircularIndexAmendmentId" />
+          <ScalarProperty Name="FDICircularId" ColumnName="FDICircularId" />
+          <ScalarProperty Name="FDICircularIndexId" ColumnName="FDICircularIndexId" />
+          <ScalarProperty Name="FDICircularSubIndexId" ColumnName="FDICircularSubIndexId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="IndexAmendmentContent" ColumnName="IndexAmendmentContent" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IndexNo" ColumnName="IndexNo" />
+          <ScalarProperty Name="SubIndexNo" ColumnName="SubIndexNo" />
+          <ScalarProperty Name="FDIChapterId" ColumnName="FDIChapterId" />
+          <ScalarProperty Name="Chapter" ColumnName="Chapter" />
+          <ScalarProperty Name="PressNoteIds" ColumnName="PressNoteIds" />
+          <ScalarProperty Name="PressNotes" ColumnName="PressNotes" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FDICircularIndexAmendmentUpdate" FunctionName="DemsifyModel.Store.FDICircularIndexAmendmentUpdate" />
+    <FunctionImportMapping FunctionImportName="FDICircularIndexDelete" FunctionName="DemsifyModel.Store.FDICircularIndexDelete" />
+    <FunctionImportMapping FunctionImportName="FDICircularIndexGet" FunctionName="DemsifyModel.Store.FDICircularIndexGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FDICircularIndexGet_Result">
+          <ScalarProperty Name="FDICircularIndexId" ColumnName="FDICircularIndexId" />
+          <ScalarProperty Name="IndexNo" ColumnName="IndexNo" />
+          <ScalarProperty Name="IndexName" ColumnName="IndexName" />
+          <ScalarProperty Name="IndexContent" ColumnName="IndexContent" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FDIChapterId" ColumnName="FDIChapterId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FDICircularIndexUpdate" FunctionName="DemsifyModel.Store.FDICircularIndexUpdate" />
+    <FunctionImportMapping FunctionImportName="FDICircularSubIndexAdd" FunctionName="DemsifyModel.Store.FDICircularSubIndexAdd" />
+    <FunctionImportMapping FunctionImportName="FDICircularSubIndexDelete" FunctionName="DemsifyModel.Store.FDICircularSubIndexDelete" />
+    <FunctionImportMapping FunctionImportName="FDICircularSubIndexGet" FunctionName="DemsifyModel.Store.FDICircularSubIndexGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FDICircularSubIndexGet_Result">
+          <ScalarProperty Name="FDICircularSubIndexId" ColumnName="FDICircularSubIndexId" />
+          <ScalarProperty Name="FDICircularIndexId" ColumnName="FDICircularIndexId" />
+          <ScalarProperty Name="SubIndexNo" ColumnName="SubIndexNo" />
+          <ScalarProperty Name="SubIndexName" ColumnName="SubIndexName" />
+          <ScalarProperty Name="SubIndexContent" ColumnName="SubIndexContent" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FDICircularSubIndexUpdate" FunctionName="DemsifyModel.Store.FDICircularSubIndexUpdate" />
+    <FunctionImportMapping FunctionImportName="FDICircularUpdate" FunctionName="DemsifyModel.Store.FDICircularUpdate" />
+    <FunctionImportMapping FunctionImportName="SectorAdd" FunctionName="DemsifyModel.Store.SectorAdd" />
+    <FunctionImportMapping FunctionImportName="SectorDelete" FunctionName="DemsifyModel.Store.SectorDelete" />
+    <FunctionImportMapping FunctionImportName="SectorGet" FunctionName="DemsifyModel.Store.SectorGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SectorGet_Result">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Subtopic" ColumnName="Subtopic" />
+          <ScalarProperty Name="Pressnote" ColumnName="Pressnote" />
+          <ScalarProperty Name="Notification" ColumnName="Notification" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+          <ScalarProperty Name="PressNoteId" ColumnName="PressNoteId" />
+          <ScalarProperty Name="NotificationId" ColumnName="NotificationId" />
+          <ScalarProperty Name="APDIRCircularId" ColumnName="APDIRCircularId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SectorUpdate" FunctionName="DemsifyModel.Store.SectorUpdate" />
+    <FunctionImportMapping FunctionImportName="SubSectorAdd" FunctionName="DemsifyModel.Store.SubSectorAdd" />
+    <FunctionImportMapping FunctionImportName="SubSectorDelete" FunctionName="DemsifyModel.Store.SubSectorDelete" />
+    <FunctionImportMapping FunctionImportName="SubSectorGet" FunctionName="DemsifyModel.Store.SubSectorGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SubSectorGet_Result">
+          <ScalarProperty Name="SubSectorId" ColumnName="SubSectorId" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SubSectorUpdate" FunctionName="DemsifyModel.Store.SubSectorUpdate" />
+    <FunctionImportMapping FunctionImportName="FDIChapterAdd" FunctionName="DemsifyModel.Store.FDIChapterAdd" />
+    <FunctionImportMapping FunctionImportName="FDIChapterDelete" FunctionName="DemsifyModel.Store.FDIChapterDelete" />
+    <FunctionImportMapping FunctionImportName="FDIChapterGet" FunctionName="DemsifyModel.Store.FDIChapterGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FDIChapterGet_Result">
+          <ScalarProperty Name="FDIchapterID" ColumnName="FDIchapterID" />
+          <ScalarProperty Name="FDIID" ColumnName="FDIID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Chapter" ColumnName="Chapter" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Whenentered" ColumnName="Whenentered" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FDIChapterUpdate" FunctionName="DemsifyModel.Store.FDIChapterUpdate" />
+    <FunctionImportMapping FunctionImportName="FAQAdd" FunctionName="DemsifyModel.Store.FAQAdd" />
+    <FunctionImportMapping FunctionImportName="FAQDelete" FunctionName="DemsifyModel.Store.FAQDelete" />
+    <FunctionImportMapping FunctionImportName="FAQGet" FunctionName="DemsifyModel.Store.FAQGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FAQGet_Result">
+          <ScalarProperty Name="FAQID" ColumnName="FAQID" />
+          <ScalarProperty Name="FAQYear" ColumnName="FAQYear" />
+          <ScalarProperty Name="FAQCategoryName" ColumnName="FAQCategoryName" />
+          <ScalarProperty Name="FAQTopicName" ColumnName="FAQTopicName" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="FAQQuNo" ColumnName="FAQQuNo" />
+          <ScalarProperty Name="FAQAnswer" ColumnName="FAQAnswer" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="Notificationid" ColumnName="Notificationid" />
+          <ScalarProperty Name="Indexid" ColumnName="Indexid" />
+          <ScalarProperty Name="MCID" ColumnName="MCID" />
+          <ScalarProperty Name="MCYear" ColumnName="MCYear" />
+          <ScalarProperty Name="MCPID" ColumnName="MCPID" />
+          <ScalarProperty Name="MCSecID" ColumnName="MCSecID" />
+          <ScalarProperty Name="MCPartID" ColumnName="MCPartID" />
+          <ScalarProperty Name="MCSubIndex" ColumnName="MCSubIndex" />
+          <ScalarProperty Name="MDID" ColumnName="MDID" />
+          <ScalarProperty Name="MDYear" ColumnName="MDYear" />
+          <ScalarProperty Name="MDPID" ColumnName="MDPID" />
+          <ScalarProperty Name="MDSecID" ColumnName="MDSecID" />
+          <ScalarProperty Name="MDPartIndexID" ColumnName="MDPartIndexID" />
+          <ScalarProperty Name="MDSubIndex" ColumnName="MDSubIndex" />
+          <ScalarProperty Name="FDIID" ColumnName="FDIID" />
+          <ScalarProperty Name="FDIYear" ColumnName="FDIYear" />
+          <ScalarProperty Name="FDIchapterID" ColumnName="FDIchapterID" />
+          <ScalarProperty Name="FDIPartIndexID" ColumnName="FDIPartIndexID" />
+          <ScalarProperty Name="FDISubIndex" ColumnName="FDISubIndex" />
+          <ScalarProperty Name="RuleID" ColumnName="RuleID" />
+          <ScalarProperty Name="GSRNo" ColumnName="GSRNo" />
+          <ScalarProperty Name="RulePartID" ColumnName="RulePartID" />
+          <ScalarProperty Name="RuleIndexId" ColumnName="RuleIndexId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FAQUpdate" FunctionName="DemsifyModel.Store.FAQUpdate" />
+    <FunctionImportMapping FunctionImportName="MasterCircularAdd" FunctionName="DemsifyModel.Store.MasterCircularAdd" />
+    <FunctionImportMapping FunctionImportName="MasterCircularDelete" FunctionName="DemsifyModel.Store.MasterCircularDelete" />
+    <FunctionImportMapping FunctionImportName="MasterCircularGet" FunctionName="DemsifyModel.Store.MasterCircularGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterCircularGet_Result">
+          <ScalarProperty Name="MCID" ColumnName="MCID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="Shorttitle" ColumnName="Shorttitle" />
+          <ScalarProperty Name="Footnote" ColumnName="Footnote" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MasterCircularUpdate" FunctionName="DemsifyModel.Store.MasterCircularUpdate" />
+    <FunctionImportMapping FunctionImportName="SectorDetailAdd" FunctionName="DemsifyModel.Store.SectorDetailAdd" />
+    <FunctionImportMapping FunctionImportName="SectorDetailDelete" FunctionName="DemsifyModel.Store.SectorDetailDelete" />
+    <FunctionImportMapping FunctionImportName="SectorDetailGet" FunctionName="DemsifyModel.Store.SectorDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SectorDetailGet_Result">
+          <ScalarProperty Name="SectorDetailId" ColumnName="SectorDetailId" />
+          <ScalarProperty Name="SectorId" ColumnName="SectorId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PressNoteId" ColumnName="PressNoteId" />
+          <ScalarProperty Name="NotificationId" ColumnName="NotificationId" />
+          <ScalarProperty Name="APDIRCircularId" ColumnName="APDIRCircularId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SubSectorId" ColumnName="SubSectorId" />
+          <ScalarProperty Name="SectorName" ColumnName="SectorName" />
+          <ScalarProperty Name="SubSectorName" ColumnName="SubSectorName" />
+          <ScalarProperty Name="PressNoteNos" ColumnName="PressNoteNos" />
+          <ScalarProperty Name="NotificationNumbers" ColumnName="NotificationNumbers" />
+          <ScalarProperty Name="APDIRCircularNos" ColumnName="APDIRCircularNos" />
+          <ScalarProperty Name="PressNotePDFs" ColumnName="PressNotePDFs" />
+          <ScalarProperty Name="NotificationPDFs" ColumnName="NotificationPDFs" />
+          <ScalarProperty Name="APDIRCircularPDFs" ColumnName="APDIRCircularPDFs" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SectorDetailUpdate" FunctionName="DemsifyModel.Store.SectorDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="FAQCategoryAdd" FunctionName="DemsifyModel.Store.FAQCategoryAdd" />
+    <FunctionImportMapping FunctionImportName="FAQCategoryDelete" FunctionName="DemsifyModel.Store.FAQCategoryDelete" />
+    <FunctionImportMapping FunctionImportName="FAQCategoryGet" FunctionName="DemsifyModel.Store.FAQCategoryGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FAQCategoryGet_Result">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EnteredDate" ColumnName="EnteredDate" />
+          <ScalarProperty Name="FAQType" ColumnName="FAQType" />
+          <ScalarProperty Name="PDFpath" ColumnName="PDFpath" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FAQCategoryUpdate" FunctionName="DemsifyModel.Store.FAQCategoryUpdate" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionAdd" FunctionName="DemsifyModel.Store.MasterDirectionAdd" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionDelete" FunctionName="DemsifyModel.Store.MasterDirectionDelete" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionGet" FunctionName="DemsifyModel.Store.MasterDirectionGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterDirectionGet_Result">
+          <ScalarProperty Name="MDID" ColumnName="MDID" />
+          <ScalarProperty Name="MasterDIrectionName" ColumnName="MasterDIrectionName" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Topics" ColumnName="Topics" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MasterDirectionUpdate" FunctionName="DemsifyModel.Store.MasterDirectionUpdate" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionFAQAdd" FunctionName="DemsifyModel.Store.MasterDirectionFAQAdd" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionFAQDelete" FunctionName="DemsifyModel.Store.MasterDirectionFAQDelete" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionFAQGet" FunctionName="DemsifyModel.Store.MasterDirectionFAQGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterDirectionFAQGet_Result">
+          <ScalarProperty Name="FAQMasterDirectionId" ColumnName="FAQMasterDirectionId" />
+          <ScalarProperty Name="MasterDirectionId" ColumnName="MasterDirectionId" />
+          <ScalarProperty Name="FAQId" ColumnName="FAQId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FAQTopicName" ColumnName="FAQTopicName" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MasterDirectionFAQUpdate" FunctionName="DemsifyModel.Store.MasterDirectionFAQUpdate" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionChapterAdd" FunctionName="DemsifyModel.Store.MasterDirectionChapterAdd" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionChapterDelete" FunctionName="DemsifyModel.Store.MasterDirectionChapterDelete" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionChapterGet" FunctionName="DemsifyModel.Store.MasterDirectionChapterGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterDirectionChapterGet_Result">
+          <ScalarProperty Name="MDPID" ColumnName="MDPID" />
+          <ScalarProperty Name="MDID" ColumnName="MDID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PartData" ColumnName="PartData" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Whenentered" ColumnName="Whenentered" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MasterDirectionChapterUpdate" FunctionName="DemsifyModel.Store.MasterDirectionChapterUpdate" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionIndexAdd" FunctionName="DemsifyModel.Store.MasterDirectionIndexAdd" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionIndexDelete" FunctionName="DemsifyModel.Store.MasterDirectionIndexDelete" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionIndexGet" FunctionName="DemsifyModel.Store.MasterDirectionIndexGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterDirectionIndexGet_Result">
+          <ScalarProperty Name="MDPartIndexID" ColumnName="MDPartIndexID" />
+          <ScalarProperty Name="MDID" ColumnName="MDID" />
+          <ScalarProperty Name="MDPID" ColumnName="MDPID" />
+          <ScalarProperty Name="ParaIndexNo" ColumnName="ParaIndexNo" />
+          <ScalarProperty Name="IndexName" ColumnName="IndexName" />
+          <ScalarProperty Name="IndexContent" ColumnName="IndexContent" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MasterDirectionIndexUpdate" FunctionName="DemsifyModel.Store.MasterDirectionIndexUpdate" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionSubIndexAdd" FunctionName="DemsifyModel.Store.MasterDirectionSubIndexAdd" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionSubIndexDelete" FunctionName="DemsifyModel.Store.MasterDirectionSubIndexDelete" />
+    <FunctionImportMapping FunctionImportName="MasterDirectionSubIndexGet" FunctionName="DemsifyModel.Store.MasterDirectionSubIndexGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterDirectionSubIndexGet_Result">
+          <ScalarProperty Name="MDSubIndex" ColumnName="MDSubIndex" />
+          <ScalarProperty Name="MDID" ColumnName="MDID" />
+          <ScalarProperty Name="MDPID" ColumnName="MDPID" />
+          <ScalarProperty Name="MDPartIndexID" ColumnName="MDPartIndexID" />
+          <ScalarProperty Name="SubIndexNo" ColumnName="SubIndexNo" />
+          <ScalarProperty Name="SubIndexName" ColumnName="SubIndexName" />
+          <ScalarProperty Name="SubIndexContent" ColumnName="SubIndexContent" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MasterDirectionSubIndexUpdate" FunctionName="DemsifyModel.Store.MasterDirectionSubIndexUpdate" />
+    <FunctionImportMapping FunctionImportName="MDIndexAmendmentAdd" FunctionName="DemsifyModel.Store.MDIndexAmendmentAdd" />
+    <FunctionImportMapping FunctionImportName="MDIndexAmendmentDelete" FunctionName="DemsifyModel.Store.MDIndexAmendmentDelete" />
+    <FunctionImportMapping FunctionImportName="MDIndexAmendmentGet" FunctionName="DemsifyModel.Store.MDIndexAmendmentGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MDIndexAmendmentGet_Result">
+          <ScalarProperty Name="MasterDirectionIndexAmendmentId" ColumnName="MasterDirectionIndexAmendmentId" />
+          <ScalarProperty Name="MasterDirectionId" ColumnName="MasterDirectionId" />
+          <ScalarProperty Name="MasterDirectionChapterId" ColumnName="MasterDirectionChapterId" />
+          <ScalarProperty Name="MasterDirectionIndexId" ColumnName="MasterDirectionIndexId" />
+          <ScalarProperty Name="MasterDirectionSubIndexId" ColumnName="MasterDirectionSubIndexId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="IndexAmendmentContent" ColumnName="IndexAmendmentContent" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ParaIndexNo" ColumnName="ParaIndexNo" />
+          <ScalarProperty Name="SubIndexNo" ColumnName="SubIndexNo" />
+          <ScalarProperty Name="PartData" ColumnName="PartData" />
+          <ScalarProperty Name="IndexName" ColumnName="IndexName" />
+          <ScalarProperty Name="SubIndexName" ColumnName="SubIndexName" />
+          <ScalarProperty Name="UpdatedInsertedByRBI" ColumnName="UpdatedInsertedByRBI" />
+          <ScalarProperty Name="UpdatedInsertedDateByRBI" ColumnName="UpdatedInsertedDateByRBI" />
+          <ScalarProperty Name="APDIRCircularIds" ColumnName="APDIRCircularIds" />
+          <ScalarProperty Name="NotificationIds" ColumnName="NotificationIds" />
+          <ScalarProperty Name="APDIRCirculars" ColumnName="APDIRCirculars" />
+          <ScalarProperty Name="Notifications" ColumnName="Notifications" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MDIndexAmendmentUpdate" FunctionName="DemsifyModel.Store.MDIndexAmendmentUpdate" />
+    <FunctionImportMapping FunctionImportName="MasterCircularDetailAdd" FunctionName="DemsifyModel.Store.MasterCircularDetailAdd" />
+    <FunctionImportMapping FunctionImportName="MasterCircularDetailDelete" FunctionName="DemsifyModel.Store.MasterCircularDetailDelete" />
+    <FunctionImportMapping FunctionImportName="MasterCircularDetailUpdate" FunctionName="DemsifyModel.Store.MasterCircularDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="MasterCircularDetailGet" FunctionName="DemsifyModel.Store.MasterCircularDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterCircularDetailGet_Result">
+          <ScalarProperty Name="MasterCircularDetailId" ColumnName="MasterCircularDetailId" />
+          <ScalarProperty Name="MasterCircularId" ColumnName="MasterCircularId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="NICCodeAdd" FunctionName="DemsifyModel.Store.NICCodeAdd" />
+    <FunctionImportMapping FunctionImportName="NICCodeDelete" FunctionName="DemsifyModel.Store.NICCodeDelete" />
+    <FunctionImportMapping FunctionImportName="NICCodeGet" FunctionName="DemsifyModel.Store.NICCodeGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.NICCodeGet_Result">
+          <ScalarProperty Name="NICCodeId" ColumnName="NICCodeId" />
+          <ScalarProperty Name="NICCodeName" ColumnName="NICCodeName" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="NICCodeUpdate" FunctionName="DemsifyModel.Store.NICCodeUpdate" />
+    <FunctionImportMapping FunctionImportName="ManualAdd" FunctionName="DemsifyModel.Store.ManualAdd" />
+    <FunctionImportMapping FunctionImportName="ManualDelete" FunctionName="DemsifyModel.Store.ManualDelete" />
+    <FunctionImportMapping FunctionImportName="ManualGet" FunctionName="DemsifyModel.Store.ManualGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.ManualGet_Result">
+          <ScalarProperty Name="ManualId" ColumnName="ManualId" />
+          <ScalarProperty Name="ManualName" ColumnName="ManualName" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ManualUpdate" FunctionName="DemsifyModel.Store.ManualUpdate" />
+    <FunctionImportMapping FunctionImportName="FetersCodeAdd" FunctionName="DemsifyModel.Store.FetersCodeAdd" />
+    <FunctionImportMapping FunctionImportName="FetersCodeDelete" FunctionName="DemsifyModel.Store.FetersCodeDelete" />
+    <FunctionImportMapping FunctionImportName="FetersCodeGet" FunctionName="DemsifyModel.Store.FetersCodeGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FetersCodeGet_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GroupNo" ColumnName="GroupNo" />
+          <ScalarProperty Name="Purpose_Group_Name" ColumnName="Purpose_Group_Name" />
+          <ScalarProperty Name="Purpose_Code" ColumnName="Purpose_Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Remittances" ColumnName="Remittances" />
+          <ScalarProperty Name="FetersCodeName" ColumnName="FetersCodeName" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FetersCodeUpdate" FunctionName="DemsifyModel.Store.FetersCodeUpdate" />
+    <FunctionImportMapping FunctionImportName="FetersCodeDetailAdd" FunctionName="DemsifyModel.Store.FetersCodeDetailAdd" />
+    <FunctionImportMapping FunctionImportName="FetersCodeDetailDelete" FunctionName="DemsifyModel.Store.FetersCodeDetailDelete" />
+    <FunctionImportMapping FunctionImportName="FetersCodeDetailGet" FunctionName="DemsifyModel.Store.FetersCodeDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FetersCodeDetailGet_Result">
+          <ScalarProperty Name="FetersCodeDetailId" ColumnName="FetersCodeDetailId" />
+          <ScalarProperty Name="FetersCodeId" ColumnName="FetersCodeId" />
+          <ScalarProperty Name="GroupNo" ColumnName="GroupNo" />
+          <ScalarProperty Name="PurposeGroupName" ColumnName="PurposeGroupName" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="LRSItem" ColumnName="LRSItem" />
+          <ScalarProperty Name="LRSFetersCode" ColumnName="LRSFetersCode" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FetersCodeDetailUpdate" FunctionName="DemsifyModel.Store.FetersCodeDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="FetersCodeGroupDetailAdd" FunctionName="DemsifyModel.Store.FetersCodeGroupDetailAdd" />
+    <FunctionImportMapping FunctionImportName="FetersCodeGroupDetailDelete" FunctionName="DemsifyModel.Store.FetersCodeGroupDetailDelete" />
+    <FunctionImportMapping FunctionImportName="FetersCodeGroupDetailGet" FunctionName="DemsifyModel.Store.FetersCodeGroupDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FetersCodeGroupDetailGet_Result">
+          <ScalarProperty Name="FetersCodeGroupDetailId" ColumnName="FetersCodeGroupDetailId" />
+          <ScalarProperty Name="FetersCodeDetailId" ColumnName="FetersCodeDetailId" />
+          <ScalarProperty Name="PurposeCode" ColumnName="PurposeCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FetersCodeGroupDetailUpdate" FunctionName="DemsifyModel.Store.FetersCodeGroupDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="FIPBReviewAdd" FunctionName="DemsifyModel.Store.FIPBReviewAdd" />
+    <FunctionImportMapping FunctionImportName="FIPBReviewDelete" FunctionName="DemsifyModel.Store.FIPBReviewDelete" />
+    <FunctionImportMapping FunctionImportName="FIPBReviewGet" FunctionName="DemsifyModel.Store.FIPBReviewGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FIPBReviewGet_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="SectorName" ColumnName="SectorName" />
+          <ScalarProperty Name="IssueCase" ColumnName="IssueCase" />
+          <ScalarProperty Name="MeetingNo" ColumnName="MeetingNo" />
+          <ScalarProperty Name="MeetingDate" ColumnName="MeetingDate" />
+          <ScalarProperty Name="MinutesUploadDate" ColumnName="MinutesUploadDate" />
+          <ScalarProperty Name="ProposalName" ColumnName="ProposalName" />
+          <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+          <ScalarProperty Name="FIPBDecision" ColumnName="FIPBDecision" />
+          <ScalarProperty Name="FIPBDecsionMinutes" ColumnName="FIPBDecsionMinutes" />
+          <ScalarProperty Name="FDIAmount" ColumnName="FDIAmount" />
+          <ScalarProperty Name="CCEAApprovals" ColumnName="CCEAApprovals" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FIPBReviewUpdate" FunctionName="DemsifyModel.Store.FIPBReviewUpdate" />
+    <FunctionImportMapping FunctionImportName="DIPPClarificationAdd" FunctionName="DemsifyModel.Store.DIPPClarificationAdd" />
+    <FunctionImportMapping FunctionImportName="DIPPClarificationDelete" FunctionName="DemsifyModel.Store.DIPPClarificationDelete" />
+    <FunctionImportMapping FunctionImportName="DIPPClarificationGet" FunctionName="DemsifyModel.Store.DIPPClarificationGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.DIPPClarificationGet_Result">
+          <ScalarProperty Name="DIPPClarificationsID" ColumnName="DIPPClarificationsID" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DIPPClarificationUpdate" FunctionName="DemsifyModel.Store.DIPPClarificationUpdate" />
+    <FunctionImportMapping FunctionImportName="FIPBPressReleaseCaseAdd" FunctionName="DemsifyModel.Store.FIPBPressReleaseCaseAdd" />
+    <FunctionImportMapping FunctionImportName="FIPBPressReleaseCaseDelete" FunctionName="DemsifyModel.Store.FIPBPressReleaseCaseDelete" />
+    <FunctionImportMapping FunctionImportName="FIPBPressReleaseCaseGet" FunctionName="DemsifyModel.Store.FIPBPressReleaseCaseGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FIPBPressReleaseCaseGet_Result">
+          <ScalarProperty Name="FIPBPressReleaseCaseId" ColumnName="FIPBPressReleaseCaseId" />
+          <ScalarProperty Name="MinistryName" ColumnName="MinistryName" />
+          <ScalarProperty Name="MeetingNo_Detail" ColumnName="MeetingNo_Detail" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FIPBPressReleaseCaseUpdate" FunctionName="DemsifyModel.Store.FIPBPressReleaseCaseUpdate" />
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationAdd" FunctionName="DemsifyModel.Store.FormSummaryDocumentationAdd" />
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationDelete" FunctionName="DemsifyModel.Store.FormSummaryDocumentationDelete" />
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationGet" FunctionName="DemsifyModel.Store.FormSummaryDocumentationGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FormSummaryDocumentationGet_Result">
+          <ScalarProperty Name="FormSummaryDocumentationId" ColumnName="FormSummaryDocumentationId" />
+          <ScalarProperty Name="TopicName" ColumnName="TopicName" />
+          <ScalarProperty Name="SubMenuCommonFieldId" ColumnName="SubMenuCommonFieldId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationUpdate" FunctionName="DemsifyModel.Store.FormSummaryDocumentationUpdate" />
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationDetailAdd" FunctionName="DemsifyModel.Store.FormSummaryDocumentationDetailAdd" />
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationDetailDelete" FunctionName="DemsifyModel.Store.FormSummaryDocumentationDetailDelete" />
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationDetailGet" FunctionName="DemsifyModel.Store.FormSummaryDocumentationDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FormSummaryDocumentationDetailGet_Result">
+          <ScalarProperty Name="FormSummaryDocumentationDetailId" ColumnName="FormSummaryDocumentationDetailId" />
+          <ScalarProperty Name="FormSummaryDocumentationId" ColumnName="FormSummaryDocumentationId" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="WordFileName" ColumnName="WordFileName" />
+          <ScalarProperty Name="ExcelFileName" ColumnName="ExcelFileName" />
+          <ScalarProperty Name="PDFFileName" ColumnName="PDFFileName" />
+          <ScalarProperty Name="SubMenuCommonFieldId" ColumnName="SubMenuCommonFieldId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationDetailUpdate" FunctionName="DemsifyModel.Store.FormSummaryDocumentationDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="RBILiaisonOfficeGet" FunctionName="DemsifyModel.Store.RBILiaisonOfficeGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RBILiaisonOfficeGet_Result">
+          <ScalarProperty Name="RBILiaisonOfficeId" ColumnName="RBILiaisonOfficeId" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="NameAndAddressOfTheCompany" ColumnName="NameAndAddressOfTheCompany" />
+          <ScalarProperty Name="PlaceOfTheLiaisonOffice" ColumnName="PlaceOfTheLiaisonOffice" />
+          <ScalarProperty Name="DateOfApprovalGrantedOrUINAlloted" ColumnName="DateOfApprovalGrantedOrUINAlloted" />
+          <ScalarProperty Name="UIN" ColumnName="UIN" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RBILiaisonOfficeAddFromXML" FunctionName="DemsifyModel.Store.RBILiaisonOfficeAddFromXML" />
+    <FunctionImportMapping FunctionImportName="RBICompoundingOrderAdd" FunctionName="DemsifyModel.Store.RBICompoundingOrderAdd" />
+    <FunctionImportMapping FunctionImportName="RBICompoundingOrderDelete" FunctionName="DemsifyModel.Store.RBICompoundingOrderDelete" />
+    <FunctionImportMapping FunctionImportName="RBICompoundingOrderGet" FunctionName="DemsifyModel.Store.RBICompoundingOrderGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RBICompoundingOrderGet_Result">
+          <ScalarProperty Name="RBICompoundingOrderId" ColumnName="RBICompoundingOrderId" />
+          <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+          <ScalarProperty Name="OrderGist" ColumnName="OrderGist" />
+          <ScalarProperty Name="Topic" ColumnName="Topic" />
+          <ScalarProperty Name="FEMRegulationRuleNo" ColumnName="FEMRegulationRuleNo" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="PenaltyAmount" ColumnName="PenaltyAmount" />
+          <ScalarProperty Name="Regional_CentralOfficeOfRBI" ColumnName="Regional_CentralOfficeOfRBI" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RBICompoundingOrderUpdate" FunctionName="DemsifyModel.Store.RBICompoundingOrderUpdate" />
+    <FunctionImportMapping FunctionImportName="RBIDataAdd" FunctionName="DemsifyModel.Store.RBIDataAdd" />
+    <FunctionImportMapping FunctionImportName="RBIDataDelete" FunctionName="DemsifyModel.Store.RBIDataDelete" />
+    <FunctionImportMapping FunctionImportName="RBIDataGet" FunctionName="DemsifyModel.Store.RBIDataGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RBIDataGet_Result">
+          <ScalarProperty Name="RBIDataId" ColumnName="RBIDataId" />
+          <ScalarProperty Name="RBIDataNameId" ColumnName="RBIDataNameId" />
+          <ScalarProperty Name="Excel" ColumnName="Excel" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="RBIDataName" ColumnName="RBIDataName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RBIDataUpdate" FunctionName="DemsifyModel.Store.RBIDataUpdate" />
+    <FunctionImportMapping FunctionImportName="RBIDataDetailAdd" FunctionName="DemsifyModel.Store.RBIDataDetailAdd" />
+    <FunctionImportMapping FunctionImportName="RBIDataDetailDelete" FunctionName="DemsifyModel.Store.RBIDataDetailDelete" />
+    <FunctionImportMapping FunctionImportName="RBIDataDetailGet" FunctionName="DemsifyModel.Store.RBIDataDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RBIDataDetailGet_Result">
+          <ScalarProperty Name="RBIDataDetailId" ColumnName="RBIDataDetailId" />
+          <ScalarProperty Name="RBIDataId" ColumnName="RBIDataId" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Excel" ColumnName="Excel" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RBIDataDetailUpdate" FunctionName="DemsifyModel.Store.RBIDataDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="RulesAdd" FunctionName="DemsifyModel.Store.RulesAdd" />
+    <FunctionImportMapping FunctionImportName="RulesDelete" FunctionName="DemsifyModel.Store.RulesDelete" />
+    <FunctionImportMapping FunctionImportName="RulesGet" FunctionName="DemsifyModel.Store.RulesGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RulesGet_Result">
+          <ScalarProperty Name="Rulesid" ColumnName="Rulesid" />
+          <ScalarProperty Name="NameofRules" ColumnName="NameofRules" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="RulesNo" ColumnName="RulesNo" />
+          <ScalarProperty Name="PublicationDate" ColumnName="PublicationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RulesUpdate" FunctionName="DemsifyModel.Store.RulesUpdate" />
+    <FunctionImportMapping FunctionImportName="RulesIndexAdd" FunctionName="DemsifyModel.Store.RulesIndexAdd" />
+    <FunctionImportMapping FunctionImportName="RulesIndexDelete" FunctionName="DemsifyModel.Store.RulesIndexDelete" />
+    <FunctionImportMapping FunctionImportName="RulesIndexGet" FunctionName="DemsifyModel.Store.RulesIndexGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RulesIndexGet_Result">
+          <ScalarProperty Name="Indexid" ColumnName="Indexid" />
+          <ScalarProperty Name="RuleID" ColumnName="RuleID" />
+          <ScalarProperty Name="GSRID" ColumnName="GSRID" />
+          <ScalarProperty Name="IndexNo" ColumnName="IndexNo" />
+          <ScalarProperty Name="Indexname" ColumnName="Indexname" />
+          <ScalarProperty Name="FemaId" ColumnName="FemaId" />
+          <ScalarProperty Name="UpdatedIndexNo" ColumnName="UpdatedIndexNo" />
+          <ScalarProperty Name="UpdatedIndexName" ColumnName="UpdatedIndexName" />
+          <ScalarProperty Name="IndexContent" ColumnName="IndexContent" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RulesIndexUpdate" FunctionName="DemsifyModel.Store.RulesIndexUpdate" />
+    <FunctionImportMapping FunctionImportName="RulesSubIndexAdd" FunctionName="DemsifyModel.Store.RulesSubIndexAdd" />
+    <FunctionImportMapping FunctionImportName="RulesSubIndexDelete" FunctionName="DemsifyModel.Store.RulesSubIndexDelete" />
+    <FunctionImportMapping FunctionImportName="RulesSubIndexGet" FunctionName="DemsifyModel.Store.RulesSubIndexGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RulesSubIndexGet_Result">
+          <ScalarProperty Name="RulesSubIndexId" ColumnName="RulesSubIndexId" />
+          <ScalarProperty Name="RuleID" ColumnName="RuleID" />
+          <ScalarProperty Name="IndexId" ColumnName="IndexId" />
+          <ScalarProperty Name="GSRID" ColumnName="GSRID" />
+          <ScalarProperty Name="RuleSubIndexNo" ColumnName="RuleSubIndexNo" />
+          <ScalarProperty Name="RuleSubIndexName" ColumnName="RuleSubIndexName" />
+          <ScalarProperty Name="Femaid" ColumnName="Femaid" />
+          <ScalarProperty Name="UpdatedSubindexNo" ColumnName="UpdatedSubindexNo" />
+          <ScalarProperty Name="updatedSubIndexName" ColumnName="updatedSubIndexName" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+          <ScalarProperty Name="SubIndexContent" ColumnName="SubIndexContent" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RulesSubIndexUpdate" FunctionName="DemsifyModel.Store.RulesSubIndexUpdate" />
+    <FunctionImportMapping FunctionImportName="GSRNotificationAdd" FunctionName="DemsifyModel.Store.GSRNotificationAdd" />
+    <FunctionImportMapping FunctionImportName="GSRNotificationDelete" FunctionName="DemsifyModel.Store.GSRNotificationDelete" />
+    <FunctionImportMapping FunctionImportName="GSRNotificationGet" FunctionName="DemsifyModel.Store.GSRNotificationGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.GSRNotificationGet_Result">
+          <ScalarProperty Name="GSRNotificationId" ColumnName="GSRNotificationId" />
+          <ScalarProperty Name="RulesId" ColumnName="RulesId" />
+          <ScalarProperty Name="GSRNotificationNo" ColumnName="GSRNotificationNo" />
+          <ScalarProperty Name="GSRNotificationName" ColumnName="GSRNotificationName" />
+          <ScalarProperty Name="GSRNotificationDate" ColumnName="GSRNotificationDate" />
+          <ScalarProperty Name="GSRNotificationEffectiveDate" ColumnName="GSRNotificationEffectiveDate" />
+          <ScalarProperty Name="GSRNotificationTypeId" ColumnName="GSRNotificationTypeId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="GSRNotificationTypeName" ColumnName="GSRNotificationTypeName" />
+          <ScalarProperty Name="RulesNo" ColumnName="RulesNo" />
+          <ScalarProperty Name="NameofRules" ColumnName="NameofRules" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GSRNotificationTypeGet" FunctionName="DemsifyModel.Store.GSRNotificationTypeGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.GSRNotificationTypeGet_Result">
+          <ScalarProperty Name="GSRNotificationTypeId" ColumnName="GSRNotificationTypeId" />
+          <ScalarProperty Name="GSRNotificationTypeName" ColumnName="GSRNotificationTypeName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GSRNotificationUpdate" FunctionName="DemsifyModel.Store.GSRNotificationUpdate" />
+    <FunctionImportMapping FunctionImportName="RulesIndexAmendmentAdd" FunctionName="DemsifyModel.Store.RulesIndexAmendmentAdd" />
+    <FunctionImportMapping FunctionImportName="RulesIndexAmendmentDelete" FunctionName="DemsifyModel.Store.RulesIndexAmendmentDelete" />
+    <FunctionImportMapping FunctionImportName="RulesIndexAmendmentGet" FunctionName="DemsifyModel.Store.RulesIndexAmendmentGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RulesIndexAmendmentGet_Result">
+          <ScalarProperty Name="RulesIndexAmendmentId" ColumnName="RulesIndexAmendmentId" />
+          <ScalarProperty Name="RulesId" ColumnName="RulesId" />
+          <ScalarProperty Name="IndexId" ColumnName="IndexId" />
+          <ScalarProperty Name="SubIndexId" ColumnName="SubIndexId" />
+          <ScalarProperty Name="IndexAmendmentContent" ColumnName="IndexAmendmentContent" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IndexNo" ColumnName="IndexNo" />
+          <ScalarProperty Name="Indexname" ColumnName="Indexname" />
+          <ScalarProperty Name="RuleSubIndexNo" ColumnName="RuleSubIndexNo" />
+          <ScalarProperty Name="RuleSubIndexName" ColumnName="RuleSubIndexName" />
+          <ScalarProperty Name="GSRNotificationIds" ColumnName="GSRNotificationIds" />
+          <ScalarProperty Name="GSRNotifications" ColumnName="GSRNotifications" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RulesIndexAmendmentUpdate" FunctionName="DemsifyModel.Store.RulesIndexAmendmentUpdate" />
+    <FunctionImportMapping FunctionImportName="AuthorWriteUpAdd" FunctionName="DemsifyModel.Store.AuthorWriteUpAdd" />
+    <FunctionImportMapping FunctionImportName="AuthorWriteUpDelete" FunctionName="DemsifyModel.Store.AuthorWriteUpDelete" />
+    <FunctionImportMapping FunctionImportName="AuthorWriteUpGet" FunctionName="DemsifyModel.Store.AuthorWriteUpGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.AuthorWriteUpGet_Result">
+          <ScalarProperty Name="AuthorWriteUpId" ColumnName="AuthorWriteUpId" />
+          <ScalarProperty Name="TopicName" ColumnName="TopicName" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AuthorWriteUpUpdate" FunctionName="DemsifyModel.Store.AuthorWriteUpUpdate" />
+    <FunctionImportMapping FunctionImportName="AuthorWriteUpDetailAdd" FunctionName="DemsifyModel.Store.AuthorWriteUpDetailAdd" />
+    <FunctionImportMapping FunctionImportName="AuthorWriteUpDetailDelete" FunctionName="DemsifyModel.Store.AuthorWriteUpDetailDelete" />
+    <FunctionImportMapping FunctionImportName="AuthorWriteUpDetailGet" FunctionName="DemsifyModel.Store.AuthorWriteUpDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.AuthorWriteUpDetailGet_Result">
+          <ScalarProperty Name="AuthorWriteUpDetailId" ColumnName="AuthorWriteUpDetailId" />
+          <ScalarProperty Name="AuthorWriteUpId" ColumnName="AuthorWriteUpId" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SubTopicName" ColumnName="SubTopicName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AuthorWriteUpDetailUpdate" FunctionName="DemsifyModel.Store.AuthorWriteUpDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="SubTopicGet" FunctionName="DemsifyModel.Store.SubTopicGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SubTopicGet_Result">
+          <ScalarProperty Name="SubTopicId" ColumnName="SubTopicId" />
+          <ScalarProperty Name="SubTopicName" ColumnName="SubTopicName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AuthorFAQAdd" FunctionName="DemsifyModel.Store.AuthorFAQAdd" />
+    <FunctionImportMapping FunctionImportName="AuthorFAQDelete" FunctionName="DemsifyModel.Store.AuthorFAQDelete" />
+    <FunctionImportMapping FunctionImportName="AuthorFAQDetailAdd" FunctionName="DemsifyModel.Store.AuthorFAQDetailAdd" />
+    <FunctionImportMapping FunctionImportName="AuthorFAQDetailDelete" FunctionName="DemsifyModel.Store.AuthorFAQDetailDelete" />
+    <FunctionImportMapping FunctionImportName="AuthorFAQDetailGet" FunctionName="DemsifyModel.Store.AuthorFAQDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.AuthorFAQDetailGet_Result">
+          <ScalarProperty Name="AuthorFAQDetailId" ColumnName="AuthorFAQDetailId" />
+          <ScalarProperty Name="AuthorFAQId" ColumnName="AuthorFAQId" />
+          <ScalarProperty Name="SubTopicId" ColumnName="SubTopicId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="SubTopicName" ColumnName="SubTopicName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AuthorFAQDetailUpdate" FunctionName="DemsifyModel.Store.AuthorFAQDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="AuthorFAQGet" FunctionName="DemsifyModel.Store.AuthorFAQGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.AuthorFAQGet_Result">
+          <ScalarProperty Name="AuthorFAQId" ColumnName="AuthorFAQId" />
+          <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="TopicName" ColumnName="TopicName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AuthorFAQUpdate" FunctionName="DemsifyModel.Store.AuthorFAQUpdate" />
+    <FunctionImportMapping FunctionImportName="AuthorFAQQuestionReplyAdd" FunctionName="DemsifyModel.Store.AuthorFAQQuestionReplyAdd" />
+    <FunctionImportMapping FunctionImportName="AuthorFAQQuestionReplyDelete" FunctionName="DemsifyModel.Store.AuthorFAQQuestionReplyDelete" />
+    <FunctionImportMapping FunctionImportName="AuthorFAQQuestionReplyGet" FunctionName="DemsifyModel.Store.AuthorFAQQuestionReplyGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.AuthorFAQQuestionReplyGet_Result">
+          <ScalarProperty Name="AuthorFAQQuestionReplyId" ColumnName="AuthorFAQQuestionReplyId" />
+          <ScalarProperty Name="AuthorFAQDetailId" ColumnName="AuthorFAQDetailId" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Reply" ColumnName="Reply" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AuthorFAQQuestionReplyUpdate" FunctionName="DemsifyModel.Store.AuthorFAQQuestionReplyUpdate" />
+    <FunctionImportMapping FunctionImportName="KeyDefinitionEventAdd" FunctionName="DemsifyModel.Store.KeyDefinitionEventAdd" />
+    <FunctionImportMapping FunctionImportName="KeyDefinitionEventDelete" FunctionName="DemsifyModel.Store.KeyDefinitionEventDelete" />
+    <FunctionImportMapping FunctionImportName="KeyDefinitionEventGet" FunctionName="DemsifyModel.Store.KeyDefinitionEventGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.KeyDefinitionEventGet_Result">
+          <ScalarProperty Name="KeyDefinitionEventId" ColumnName="KeyDefinitionEventId" />
+          <ScalarProperty Name="CommonFieldDefinitionEventId" ColumnName="CommonFieldDefinitionEventId" />
+          <ScalarProperty Name="DefinitionName" ColumnName="DefinitionName" />
+          <ScalarProperty Name="DefinitionAuthorNote" ColumnName="DefinitionAuthorNote" />
+          <ScalarProperty Name="DefinitionContent" ColumnName="DefinitionContent" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="EventAuthorNote" ColumnName="EventAuthorNote" />
+          <ScalarProperty Name="RegulationId" ColumnName="RegulationId" />
+          <ScalarProperty Name="RulesId" ColumnName="RulesId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CommonFieldModuleIds" ColumnName="CommonFieldModuleIds" />
+          <ScalarProperty Name="Modules" ColumnName="Modules" />
+          <ScalarProperty Name="NotificationIds" ColumnName="NotificationIds" />
+          <ScalarProperty Name="GSRNotificationIds" ColumnName="GSRNotificationIds" />
+          <ScalarProperty Name="FDICircularIds" ColumnName="FDICircularIds" />
+          <ScalarProperty Name="PressNoteIds" ColumnName="PressNoteIds" />
+          <ScalarProperty Name="ActIds" ColumnName="ActIds" />
+          <ScalarProperty Name="MasterDirectionIds" ColumnName="MasterDirectionIds" />
+          <ScalarProperty Name="APDIRCircularIds" ColumnName="APDIRCircularIds" />
+          <ScalarProperty Name="Notifications" ColumnName="Notifications" />
+          <ScalarProperty Name="GSRNotifications" ColumnName="GSRNotifications" />
+          <ScalarProperty Name="FDICirculars" ColumnName="FDICirculars" />
+          <ScalarProperty Name="PressNotes" ColumnName="PressNotes" />
+          <ScalarProperty Name="Acts" ColumnName="Acts" />
+          <ScalarProperty Name="MasterDirections" ColumnName="MasterDirections" />
+          <ScalarProperty Name="APDIRCirculars" ColumnName="APDIRCirculars" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="KeyDefinitionEventUpdate" FunctionName="DemsifyModel.Store.KeyDefinitionEventUpdate" />
+    <FunctionImportMapping FunctionImportName="lo_SearchCount" FunctionName="DemsifyModel.Store.lo_SearchCount" />
+    <FunctionImportMapping FunctionImportName="CommonFieldGet" FunctionName="DemsifyModel.Store.CommonFieldGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.CommonFieldGet_Result">
+          <ScalarProperty Name="CommonFieldId" ColumnName="CommonFieldId" />
+          <ScalarProperty Name="FieldTypeName" ColumnName="FieldTypeName" />
+          <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoginWithMobile" FunctionName="DemsifyModel.Store.LoginWithMobile">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.LoginWithMobile_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="MobileOTP" ColumnName="MobileOTP" />
+          <ScalarProperty Name="EmailOTP" ColumnName="EmailOTP" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="VerificationToken" ColumnName="VerificationToken" />
+          <ScalarProperty Name="IsVerified" ColumnName="IsVerified" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="MailSentDate" ColumnName="MailSentDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="LoginWithUserName" FunctionName="DemsifyModel.Store.LoginWithUserName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.LoginWithUserName_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="MobileOTP" ColumnName="MobileOTP" />
+          <ScalarProperty Name="EmailOTP" ColumnName="EmailOTP" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="VerificationToken" ColumnName="VerificationToken" />
+          <ScalarProperty Name="IsVerified" ColumnName="IsVerified" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="MailSentDate" ColumnName="MailSentDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UserProfileAdd" FunctionName="DemsifyModel.Store.UserProfileAdd" />
+    <FunctionImportMapping FunctionImportName="VerifyAccountForMobile" FunctionName="DemsifyModel.Store.VerifyAccountForMobile" />
+    <FunctionImportMapping FunctionImportName="CheckUserExists" FunctionName="DemsifyModel.Store.CheckUserExists" />
+    <FunctionImportMapping FunctionImportName="OTPUpdateForLogin" FunctionName="DemsifyModel.Store.OTPUpdateForLogin" />
+    <FunctionImportMapping FunctionImportName="OTPUpdateForUserProfile" FunctionName="DemsifyModel.Store.OTPUpdateForUserProfile" />
+    <FunctionImportMapping FunctionImportName="FEMASubModuleOfModuleGet" FunctionName="DemsifyModel.Store.FEMASubModuleOfModuleGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FEMASubModuleOfModuleGet_Result">
+          <ScalarProperty Name="FEMASubModuleOfModuleId" ColumnName="FEMASubModuleOfModuleId" />
+          <ScalarProperty Name="FEMAModuleId" ColumnName="FEMAModuleId" />
+          <ScalarProperty Name="FEMASubModuleId" ColumnName="FEMASubModuleId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FEMASubModuleName" ColumnName="FEMASubModuleName" />
+          <ScalarProperty Name="FEMAKeyModuleId" ColumnName="FEMAKeyModuleId" />
+          <ScalarProperty Name="FEMAKeyModuleName" ColumnName="FEMAKeyModuleName" />
+          <ScalarProperty Name="FEMAKeyModuleDetail" ColumnName="FEMAKeyModuleDetail" />
+          <ScalarProperty Name="FEMAKeyModuleDetailNames" ColumnName="FEMAKeyModuleDetailNames" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RegulationOfFEMASubModuleDetailGet" FunctionName="DemsifyModel.Store.RegulationOfFEMASubModuleDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RegulationOfFEMASubModuleDetailGet_Result">
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="Regulationname" ColumnName="Regulationname" />
+          <ScalarProperty Name="Regulationnumber" ColumnName="Regulationnumber" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PublicationDate" ColumnName="PublicationDate" />
+          <ScalarProperty Name="Dateofpublication" ColumnName="Dateofpublication" />
+          <ScalarProperty Name="SortID" ColumnName="SortID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UserProfileGet" FunctionName="DemsifyModel.Store.UserProfileGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.UserProfileGet_Result3">
+          <ScalarProperty Name="UserProfileId" ColumnName="UserProfileId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ProfessionalQualificationId" ColumnName="ProfessionalQualificationId" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ProfessionalQualificationName" ColumnName="ProfessionalQualificationName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="SubscriptionId" ColumnName="SubscriptionId" />
+          <ScalarProperty Name="SubscriptionStatus" ColumnName="SubscriptionStatus" />
+          <ScalarProperty Name="SubscriptionExpiryDays" ColumnName="SubscriptionExpiryDays" />
+          <ScalarProperty Name="SubscriptionExpiryDaysStatus" ColumnName="SubscriptionExpiryDaysStatus" />
+          <ScalarProperty Name="IsExpired" ColumnName="IsExpired" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="RulesOfFEMASubModuleDetailGet" FunctionName="DemsifyModel.Store.RulesOfFEMASubModuleDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RulesOfFEMASubModuleDetailGet_Result">
+          <ScalarProperty Name="Rulesid" ColumnName="Rulesid" />
+          <ScalarProperty Name="NameofRules" ColumnName="NameofRules" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="RulesNo" ColumnName="RulesNo" />
+          <ScalarProperty Name="PublicationDate" ColumnName="PublicationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MasterCircularOfFEMASubModuleDetailGet" FunctionName="DemsifyModel.Store.MasterCircularOfFEMASubModuleDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterCircularOfFEMASubModuleDetailGet_Result">
+          <ScalarProperty Name="MCID" ColumnName="MCID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="Shorttitle" ColumnName="Shorttitle" />
+          <ScalarProperty Name="Footnote" ColumnName="Footnote" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+          <ScalarProperty Name="Isdeleted" ColumnName="Isdeleted" />
+          <ScalarProperty Name="Entereddate" ColumnName="Entereddate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MasterDirectionOfFEMASubModuleDetailGet" FunctionName="DemsifyModel.Store.MasterDirectionOfFEMASubModuleDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.MasterDirectionOfFEMASubModuleDetailGet_Result">
+          <ScalarProperty Name="MDID" ColumnName="MDID" />
+          <ScalarProperty Name="MasterDIrectionName" ColumnName="MasterDIrectionName" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Topics" ColumnName="Topics" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="SortId" ColumnName="SortId" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Footer" ColumnName="Footer" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FEMASubModuleDetailAdd" FunctionName="DemsifyModel.Store.FEMASubModuleDetailAdd" />
+    <FunctionImportMapping FunctionImportName="FEMASubModuleDetailUpdate" FunctionName="DemsifyModel.Store.FEMASubModuleDetailUpdate" />
+    <FunctionImportMapping FunctionImportName="FEMASubModuleOfModuleDelete" FunctionName="DemsifyModel.Store.FEMASubModuleOfModuleDelete" />
+    <FunctionImportMapping FunctionImportName="RBIFAQOfFEMASubModuleDetailGet" FunctionName="DemsifyModel.Store.RBIFAQOfFEMASubModuleDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.RBIFAQOfFEMASubModuleDetailGet_Result">
+          <ScalarProperty Name="FAQID" ColumnName="FAQID" />
+          <ScalarProperty Name="FAQYear" ColumnName="FAQYear" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="FAQCategoryName" ColumnName="FAQCategoryName" />
+          <ScalarProperty Name="FAQTopicName" ColumnName="FAQTopicName" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="FAQQuNo" ColumnName="FAQQuNo" />
+          <ScalarProperty Name="FAQAnswer" ColumnName="FAQAnswer" />
+          <ScalarProperty Name="Regulationid" ColumnName="Regulationid" />
+          <ScalarProperty Name="Notificationid" ColumnName="Notificationid" />
+          <ScalarProperty Name="Indexid" ColumnName="Indexid" />
+          <ScalarProperty Name="MCID" ColumnName="MCID" />
+          <ScalarProperty Name="MCYear" ColumnName="MCYear" />
+          <ScalarProperty Name="MCPID" ColumnName="MCPID" />
+          <ScalarProperty Name="MCSecID" ColumnName="MCSecID" />
+          <ScalarProperty Name="MCPartID" ColumnName="MCPartID" />
+          <ScalarProperty Name="MCSubIndex" ColumnName="MCSubIndex" />
+          <ScalarProperty Name="MDID" ColumnName="MDID" />
+          <ScalarProperty Name="MDYear" ColumnName="MDYear" />
+          <ScalarProperty Name="MDPID" ColumnName="MDPID" />
+          <ScalarProperty Name="MDSecID" ColumnName="MDSecID" />
+          <ScalarProperty Name="MDPartIndexID" ColumnName="MDPartIndexID" />
+          <ScalarProperty Name="MDSubIndex" ColumnName="MDSubIndex" />
+          <ScalarProperty Name="FDIID" ColumnName="FDIID" />
+          <ScalarProperty Name="FDIYear" ColumnName="FDIYear" />
+          <ScalarProperty Name="FDIchapterID" ColumnName="FDIchapterID" />
+          <ScalarProperty Name="FDIPartIndexID" ColumnName="FDIPartIndexID" />
+          <ScalarProperty Name="FDISubIndex" ColumnName="FDISubIndex" />
+          <ScalarProperty Name="RuleID" ColumnName="RuleID" />
+          <ScalarProperty Name="GSRNo" ColumnName="GSRNo" />
+          <ScalarProperty Name="RulePartID" ColumnName="RulePartID" />
+          <ScalarProperty Name="RuleIndexId" ColumnName="RuleIndexId" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="WhenEntered" ColumnName="WhenEntered" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SupportTicketAdd" FunctionName="DemsifyModel.Store.SupportTicketAdd" />
+    <FunctionImportMapping FunctionImportName="SupportTicketGet" FunctionName="DemsifyModel.Store.SupportTicketGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SupportTicketGet_Result">
+          <ScalarProperty Name="SupportTicketId" ColumnName="SupportTicketId" />
+          <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+          <ScalarProperty Name="SubTopicId" ColumnName="SubTopicId" />
+          <ScalarProperty Name="QueryTitle" ColumnName="QueryTitle" />
+          <ScalarProperty Name="Query" ColumnName="Query" />
+          <ScalarProperty Name="TopicName" ColumnName="TopicName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsMailSentToAdmin" ColumnName="IsMailSentToAdmin" />
+          <ScalarProperty Name="SupportTicketSubTopicName" ColumnName="SupportTicketSubTopicName" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SupportTicketReplyAdd" FunctionName="DemsifyModel.Store.SupportTicketReplyAdd" />
+    <FunctionImportMapping FunctionImportName="SupportTicketReplyGet" FunctionName="DemsifyModel.Store.SupportTicketReplyGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SupportTicketReplyGet_Result">
+          <ScalarProperty Name="SupportTicketReplyId" ColumnName="SupportTicketReplyId" />
+          <ScalarProperty Name="SupportTicketId" ColumnName="SupportTicketId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="QueryReply" ColumnName="QueryReply" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SupportTicketDelete" FunctionName="DemsifyModel.Store.SupportTicketDelete" />
+    <FunctionImportMapping FunctionImportName="SupportTicketReplyDelete" FunctionName="DemsifyModel.Store.SupportTicketReplyDelete" />
+    <FunctionImportMapping FunctionImportName="SupportTicketMailSentUpdate" FunctionName="DemsifyModel.Store.SupportTicketMailSentUpdate" />
+    <FunctionImportMapping FunctionImportName="SupportTicketReplyMailSentUpdate" FunctionName="DemsifyModel.Store.SupportTicketReplyMailSentUpdate" />
+    <FunctionImportMapping FunctionImportName="PenaltyDetailGet" FunctionName="DemsifyModel.Store.PenaltyDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.PenaltyDetailGet_Result">
+          <ScalarProperty Name="PenaltyDetailID" ColumnName="PenaltyDetailID" />
+          <ScalarProperty Name="CalculatorID" ColumnName="CalculatorID" />
+          <ScalarProperty Name="IsFixedPenalty" ColumnName="IsFixedPenalty" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="RangeAfter07November2017" ColumnName="RangeAfter07November2017" />
+          <ScalarProperty Name="AmountAfter07November2017" ColumnName="AmountAfter07November2017" />
+          <ScalarProperty Name="ExtraPenaltyRange" ColumnName="ExtraPenaltyRange" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CalculatorName" ColumnName="CalculatorName" />
+          <ScalarProperty Name="FEMAModuleId" ColumnName="FEMAModuleId" />
+          <ScalarProperty Name="CalculatorSubTopicId" ColumnName="CalculatorSubTopicId" />
+          <ScalarProperty Name="CalculatorSubTopicName" ColumnName="CalculatorSubTopicName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CalculatorSubTopicGet" FunctionName="DemsifyModel.Store.CalculatorSubTopicGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.CalculatorSubTopicGet_Result">
+          <ScalarProperty Name="CalculatorSubTopicId" ColumnName="CalculatorSubTopicId" />
+          <ScalarProperty Name="FEMAModuleId" ColumnName="FEMAModuleId" />
+          <ScalarProperty Name="CalculatorSubTopicName" ColumnName="CalculatorSubTopicName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FEMAModuleName" ColumnName="FEMAModuleName" />
+          <ScalarProperty Name="IsAmountOfContraventionNeeded" ColumnName="IsAmountOfContraventionNeeded" />
+          <ScalarProperty Name="IsTotalNoOfAPR_AAC_FCGPR_Needed" ColumnName="IsTotalNoOfAPR_AAC_FCGPR_Needed" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SupportTicketSubTopicGet" FunctionName="DemsifyModel.Store.SupportTicketSubTopicGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SupportTicketSubTopicGet_Result">
+          <ScalarProperty Name="SupportTicketSubTopicId" ColumnName="SupportTicketSubTopicId" />
+          <ScalarProperty Name="FEMAModuleId" ColumnName="FEMAModuleId" />
+          <ScalarProperty Name="SupportTicketSubTopicName" ColumnName="SupportTicketSubTopicName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FEMAModuleName" ColumnName="FEMAModuleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CalculatorAnswerGet" FunctionName="DemsifyModel.Store.CalculatorAnswerGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.CalculatorAnswerGet_Result">
+          <ScalarProperty Name="CalculatorAnswerId" ColumnName="CalculatorAnswerId" />
+          <ScalarProperty Name="CalculatorQuestionId" ColumnName="CalculatorQuestionId" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FEMAModuleId" ColumnName="FEMAModuleId" />
+          <ScalarProperty Name="QuestionText" ColumnName="QuestionText" />
+          <ScalarProperty Name="FEMAModuleName" ColumnName="FEMAModuleName" />
+          <ScalarProperty Name="OutcomeId" ColumnName="OutcomeId" />
+          <ScalarProperty Name="OutcomeName" ColumnName="OutcomeName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ContactUsAdd" FunctionName="DemsifyModel.Store.ContactUsAdd" />
+    <FunctionImportMapping FunctionImportName="ContactUsDelete" FunctionName="DemsifyModel.Store.ContactUsDelete" />
+    <FunctionImportMapping FunctionImportName="ContactUsGet" FunctionName="DemsifyModel.Store.ContactUsGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.ContactUsGet_Result">
+          <ScalarProperty Name="ContactUsId" ColumnName="ContactUsId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PackageGet" FunctionName="DemsifyModel.Store.PackageGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.PackageGet_Result">
+          <ScalarProperty Name="PackageId" ColumnName="PackageId" />
+          <ScalarProperty Name="PackageTypeId" ColumnName="PackageTypeId" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="PackageDuration" ColumnName="PackageDuration" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="PackageTypeName" ColumnName="PackageTypeName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SubscriptionAdd" FunctionName="DemsifyModel.Store.SubscriptionAdd" />
+    <FunctionImportMapping FunctionImportName="SubscriptionGet" FunctionName="DemsifyModel.Store.SubscriptionGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SubscriptionGet_Result2">
+          <ScalarProperty Name="SubscriptionId" ColumnName="SubscriptionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PackageId" ColumnName="PackageId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsCurrent" ColumnName="IsCurrent" />
+          <ScalarProperty Name="IsExpired" ColumnName="IsExpired" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsPending" ColumnName="IsPending" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsCanceled" ColumnName="IsCanceled" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CancellationDate" ColumnName="CancellationDate" />
+          <ScalarProperty Name="ActivationDate" ColumnName="ActivationDate" />
+          <ScalarProperty Name="CancelledBy" ColumnName="CancelledBy" />
+          <ScalarProperty Name="IsMailSentToUser" ColumnName="IsMailSentToUser" />
+          <ScalarProperty Name="IsMailSentToAdmin" ColumnName="IsMailSentToAdmin" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IsLegalAgreementAccepted" ColumnName="IsLegalAgreementAccepted" />
+          <ScalarProperty Name="SubscriptionStatus" ColumnName="SubscriptionStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SubscriptionUpdate" FunctionName="DemsifyModel.Store.SubscriptionUpdate" />
+    <FunctionImportMapping FunctionImportName="SubscriptionMailSentUpdate" FunctionName="DemsifyModel.Store.SubscriptionMailSentUpdate" />
+    <FunctionImportMapping FunctionImportName="SubscriptionHistoryMailSentUpdate" FunctionName="DemsifyModel.Store.SubscriptionHistoryMailSentUpdate" />
+    <FunctionImportMapping FunctionImportName="LatestNewsGet" FunctionName="DemsifyModel.Store.LatestNewsGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.LatestNewsGet_Result">
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SearchGet" FunctionName="DemsifyModel.Store.SearchGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SearchGet_Result">
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="PDF" ColumnName="PDF" />
+          <ScalarProperty Name="Excel" ColumnName="Excel" />
+          <ScalarProperty Name="Word" ColumnName="Word" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UserProfileUpdate" FunctionName="DemsifyModel.Store.UserProfileUpdate" />
+    <FunctionImportMapping FunctionImportName="SearchAutoCompleteGet" FunctionName="DemsifyModel.Store.SearchAutoCompleteGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SearchAutoCompleteGet_Result">
+          <ScalarProperty Name="SearchContent" ColumnName="SearchContent" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FormSummaryDocumentationOfFEMASubModuleDetailGet" FunctionName="DemsifyModel.Store.FormSummaryDocumentationOfFEMASubModuleDetailGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.FormSummaryDocumentationOfFEMASubModuleDetailGet_Result">
+          <ScalarProperty Name="FormSummaryDocumentationId" ColumnName="FormSummaryDocumentationId" />
+          <ScalarProperty Name="TopicName" ColumnName="TopicName" />
+          <ScalarProperty Name="SubMenuCommonFieldId" ColumnName="SubMenuCommonFieldId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AmendmentContentGet" FunctionName="DemsifyModel.Store.AmendmentContentGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.AmendmentContentGet_Result">
+          <ScalarProperty Name="AmendmentContentId" ColumnName="AmendmentContentId" />
+          <ScalarProperty Name="AmendmentContentModuleId" ColumnName="AmendmentContentModuleId" />
+          <ScalarProperty Name="IndexAmendmentId" ColumnName="IndexAmendmentId" />
+          <ScalarProperty Name="AmendmentContent" ColumnName="AmendmentContent" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UserLegalAggrementAdd" FunctionName="DemsifyModel.Store.UserLegalAggrementAdd" />
+    <FunctionImportMapping FunctionImportName="SubscriptionPackageGet" FunctionName="DemsifyModel.Store.SubscriptionPackageGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SubscriptionPackageGet_Result6">
+          <ScalarProperty Name="PackageId" ColumnName="PackageId" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="PackageAmount" ColumnName="PackageAmount" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PackageDetail" ColumnName="PackageDetail" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SubscriptionPackageAdd" FunctionName="DemsifyModel.Store.SubscriptionPackageAdd" />
+    <FunctionImportMapping FunctionImportName="SubscriptionPackageUpdate" FunctionName="DemsifyModel.Store.SubscriptionPackageUpdate" />
+    <FunctionImportMapping FunctionImportName="SubscriptionPackageDelete" FunctionName="DemsifyModel.Store.SubscriptionPackageDelete" />
+    <FunctionImportMapping FunctionImportName="SubcriptionPackageInformationGet" FunctionName="DemsifyModel.Store.SubcriptionPackageInformationGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.SubcriptionPackageInformationGet_Result">
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="PackageAmount" ColumnName="PackageAmount" />
+          <ScalarProperty Name="PackageDetail" ColumnName="PackageDetail" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Policy_AddUpdate" FunctionName="DemsifyModel.Store.Policy_AddUpdate" />
+    <FunctionImportMapping FunctionImportName="GetPrivacyPolicy" FunctionName="DemsifyModel.Store.GetPrivacyPolicy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.GetPrivacyPolicy_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PrivacyPolicy" ColumnName="PrivacyPolicy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetTermsCondition" FunctionName="DemsifyModel.Store.GetTermsCondition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.GetTermsCondition_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TermsCondition" ColumnName="TermsCondition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TermsCondition_Add" FunctionName="DemsifyModel.Store.TermsCondition_Add" />
+    <FunctionImportMapping FunctionImportName="EndUserLicenseAggrement_Add" FunctionName="DemsifyModel.Store.EndUserLicenseAggrement_Add" />
+    <FunctionImportMapping FunctionImportName="GetEndUserLicenseAggrement" FunctionName="DemsifyModel.Store.GetEndUserLicenseAggrement">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.GetEndUserLicenseAggrement_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EndUserLicenseAggrement" ColumnName="EndUserLicenseAggrement" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetSubscriptionPolicy" FunctionName="DemsifyModel.Store.GetSubscriptionPolicy">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DemsifyModel.GetSubscriptionPolicy_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SubscriptionPolicy" ColumnName="SubscriptionPolicy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SubscriptionPolicy_Add" FunctionName="DemsifyModel.Store.SubscriptionPolicy_Add" />
+  </EntityContainerMapping>
+</Mapping>

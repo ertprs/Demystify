@@ -1,0 +1,36 @@
+﻿
+<div class="subscribe-sec Scroll-PopUp">
+    <div class="container-fluid">
+        <form [formGroup]="frmLegalAggrement" novalidate>
+            <div *ngIf="errorMessage" class="alert alert-danger" style="width:300px !important;margin-top:8px !important;">
+                <a class="close" data-close="alert"></a>
+                <span [innerHtml]="errorMessage"></span>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="background-color:#f5f5f5;">
+                    <div class="subscripation_top_text text-center">
+                        <div class="subscri-title">Legal Agreement</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" style="padding-top:10px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="divEULA">
+                        </div><br />
+                        <div class="text-center" style="font-weight:bold;">
+                            <input type="checkbox" name="legalAggrement" id="LegalAggrement" formControlName="LegalAggrement" required (change)="LegalAgreementchangeEvent($event)"> I AGREE
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <button type="button" id="btnLegalAggrement" (click)="LegalAgreement(frmLegalAggrement)" class="btn btn-primary sub" [disabled]="toogleBool"><i class="fa fa-paper-plane" aria-hidden="true"></i> AGREE </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

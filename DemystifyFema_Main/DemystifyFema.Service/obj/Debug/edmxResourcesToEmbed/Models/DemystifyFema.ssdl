@@ -1,0 +1,2539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemsifyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="AccessTokenCheck" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AccessToken" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsValid" Type="bit" Mode="InOut" />
+  </Function>
+  <Function Name="ActNameAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Title" Type="nvarchar" Mode="In" />
+    <Parameter Name="ActPDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ActNameDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ActID" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ActNameGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ActID" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ActNameUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ActID" Type="int" Mode="In" />
+    <Parameter Name="Title" Type="nvarchar" Mode="In" />
+    <Parameter Name="ActPDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AllDefinitionAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ActId" Type="int" Mode="In" />
+    <Parameter Name="DefinitionName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FullDInsertion" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="AuthorNote" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AllDefinitionDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AllDefinitionGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="ActId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AllDefinitionUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="ActId" Type="int" Mode="In" />
+    <Parameter Name="DefinitionName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FullDInsertion" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="AuthorNote" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AmendmentContentGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AmendmentContentId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="AmendmentContentModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="APDIRCircularName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="APDIRCircularDate" Type="datetime" Mode="In" />
+    <Parameter Name="APDIRCircularEffectiveDate" Type="datetime" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="SectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubSectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularAfterAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularParentId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularAfterDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularAfterId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularAfterGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularAfterId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularParentId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularAfterUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularAfterId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularParentId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularBeforeAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularParentId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularBeforeDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularBeforeId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularBeforeGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularBeforeId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularParentId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularBeforeUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularBeforeId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularParentId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="APDIRCircularUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="APDIRCircularName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="APDIRCircularDate" Type="datetime" Mode="In" />
+    <Parameter Name="APDIRCircularEffectiveDate" Type="datetime" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="SectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubSectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQId" Type="int" Mode="In" />
+    <Parameter Name="SubTopicId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQDetailDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQDetailId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQDetailId" Type="int" Mode="In" />
+    <Parameter Name="AuthorFAQId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQDetailId" Type="int" Mode="In" />
+    <Parameter Name="AuthorFAQId" Type="int" Mode="In" />
+    <Parameter Name="SubTopicId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQQuestionReplyAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQDetailId" Type="int" Mode="In" />
+    <Parameter Name="Question" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Reply" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQQuestionReplyDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQQuestionReplyId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQQuestionReplyGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQQuestionReplyId" Type="int" Mode="In" />
+    <Parameter Name="AuthorFAQDetailId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQQuestionReplyUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQQuestionReplyId" Type="int" Mode="In" />
+    <Parameter Name="AuthorFAQDetailId" Type="int" Mode="In" />
+    <Parameter Name="Question" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Reply" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorFAQUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorFAQId" Type="int" Mode="In" />
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorWriteUpAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorWriteUpDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorWriteUpId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorWriteUpDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorWriteUpId" Type="int" Mode="In" />
+    <Parameter Name="SubTopicName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorWriteUpDetailDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorWriteUpDetailId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorWriteUpDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorWriteUpDetailId" Type="int" Mode="In" />
+    <Parameter Name="AuthorWriteUpId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorWriteUpDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorWriteUpDetailId" Type="int" Mode="In" />
+    <Parameter Name="AuthorWriteUpId" Type="int" Mode="In" />
+    <Parameter Name="SubTopicName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorWriteUpGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorWriteUpId" Type="int" Mode="In" />
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="AuthorWriteUpUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AuthorWriteUpId" Type="int" Mode="In" />
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="CalculatorAnswerGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CalculatorAnswerId" Type="int" Mode="In" />
+    <Parameter Name="CalculatorQuestionId" Type="int" Mode="In" />
+    <Parameter Name="FEMAModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="CalculatorSubTopicGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CalculatorSubTopicId" Type="int" Mode="In" />
+    <Parameter Name="FEMAModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="CheckUserExists" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="CommonFieldGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FieldTypeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ContactUsAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Email" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Mobile" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Comment" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ContactUsDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContactUsId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ContactUsGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ContactUsId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="DIPPClarificationAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ClarificationTopic" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="DIPPClarificationDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DIPPClarificationId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="DIPPClarificationGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DIPPClarificationId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="DIPPClarificationUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DIPPClarificationId" Type="int" Mode="In" />
+    <Parameter Name="ClarificationTopic" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="EndUserLicenseAggrement_Add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Content" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FAQAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="TopicName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FAQCategoryAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FAQCategoryDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FAQCategoryId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FAQCategoryGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FAQCategoryId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FAQCategoryUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FAQCategoryId" Type="int" Mode="In" />
+    <Parameter Name="CategoryName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FAQDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FAQId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FAQGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FAQId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FAQUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FAQId" Type="int" Mode="In" />
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="TopicName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDIChapterAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="Chapter" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterChapterId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDIChapterDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDIChapterGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDIChapterUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="Chapter" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterChapterId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularIndexAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="IndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="IndexName" Type="nvarchar" Mode="In" />
+    <Parameter Name="IndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterIndexId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularIndexAmendmentAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="PressNoteIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentContent" Type="xml" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularIndexAmendmentDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularIndexAmendmentGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularIndexAmendmentUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="PressNoteIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularIndexId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentContent" Type="xml" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularIndexDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularIndexId" Type="int" Mode="In" />
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularIndexGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularIndexId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularIndexUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularIndexId" Type="int" Mode="In" />
+    <Parameter Name="FDIChapterId" Type="int" Mode="In" />
+    <Parameter Name="IndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Indexname" Type="nvarchar" Mode="In" />
+    <Parameter Name="IndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularSubIndexAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularIndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubIndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubIndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularSubIndexDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularSubIndexGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularIndexId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularSubIndexUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularIndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubIndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubIndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FDICircularUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FDICircularId" Type="int" Mode="In" />
+    <Parameter Name="FDICircularName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FemaindexAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Regulationid" Type="int" Mode="In" />
+    <Parameter Name="IndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Indexname" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterIndexId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FemaindexDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Indexid" Type="int" Mode="In" />
+    <Parameter Name="RegulationId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FemaindexGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Indexid" Type="int" Mode="In" />
+    <Parameter Name="Regulationid" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FemaindexUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Indexid" Type="int" Mode="In" />
+    <Parameter Name="Regulationid" Type="int" Mode="In" />
+    <Parameter Name="IndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Indexname" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FemaSubIndexAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubIndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubIndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FemaSubIndexDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FemaSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="FemaIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FemaSubIndexGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FemaSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="RegulationId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FemaSubIndexUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FemaSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubIndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubIndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FEMASubModuleDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMAModuleId" Type="int" Mode="In" />
+    <Parameter Name="FEMASubModuleId" Type="int" Mode="In" />
+    <Parameter Name="RegulationKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="RulesKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MasterDirectionKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MasterCircularKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="RBIFAQKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FormKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SummaryKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DocumentationKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FEMASubModuleDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="FEMAModuleId" Type="int" Mode="In" />
+    <Parameter Name="FEMASubModuleId" Type="int" Mode="In" />
+    <Parameter Name="RegulationKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="RulesKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MasterDirectionKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MasterCircularKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="RBIFAQKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FormKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SummaryKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DocumentationKeyModuleDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FEMASubModuleOfModuleDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FEMASubModuleOfModuleGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMAModuleId" Type="int" Mode="In" />
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeId" Type="int" Mode="In" />
+    <Parameter Name="GroupNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="PurposeGroupName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LRSItem" Type="nvarchar" Mode="In" />
+    <Parameter Name="LRSFetersCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeDetailDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeDetailId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeDetailId" Type="int" Mode="In" />
+    <Parameter Name="FetersCodeId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeDetailId" Type="int" Mode="In" />
+    <Parameter Name="FetersCodeId" Type="int" Mode="In" />
+    <Parameter Name="GroupNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="PurposeGroupName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LRSItem" Type="nvarchar" Mode="In" />
+    <Parameter Name="LRSFetersCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeGroupDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeDetailId" Type="int" Mode="In" />
+    <Parameter Name="PurposeCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeGroupDetailDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeGroupDetailId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeGroupDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeGroupDetailId" Type="int" Mode="In" />
+    <Parameter Name="FetersCodeDetailId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeGroupDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeGroupDetailId" Type="int" Mode="In" />
+    <Parameter Name="FetersCodeDetailId" Type="int" Mode="In" />
+    <Parameter Name="PurposeCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FetersCodeUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FetersCodeId" Type="int" Mode="In" />
+    <Parameter Name="FetersCodeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FIPBPressReleaseCaseAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MinistryName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MeetingNo_Detail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FIPBPressReleaseCaseDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FIPBPressReleaseCaseId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FIPBPressReleaseCaseGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FIPBPressReleaseCaseId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FIPBPressReleaseCaseUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FIPBPressReleaseCaseId" Type="int" Mode="In" />
+    <Parameter Name="MinistryName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MeetingNo_Detail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FIPBReviewAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FIPBReviewDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FIPBReviewId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FIPBReviewGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FIPBReviewId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FIPBReviewUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FIPBReviewId" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TopicName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubMenuName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FormSummaryDocumentationId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FormSummaryDocumentationId" Type="int" Mode="In" />
+    <Parameter Name="FormName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="WordFileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ExcelFileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDFFileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubMenuName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationDetailDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FormSummaryDocumentationDetailId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FormSummaryDocumentationDetailId" Type="int" Mode="In" />
+    <Parameter Name="FormSummaryDocumentationId" Type="int" Mode="In" />
+    <Parameter Name="SubMenuName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FormSummaryDocumentationDetailId" Type="int" Mode="In" />
+    <Parameter Name="FormSummaryDocumentationId" Type="int" Mode="In" />
+    <Parameter Name="FormName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="WordFileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ExcelFileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDFFileName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubMenuName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FormSummaryDocumentationId" Type="int" Mode="In" />
+    <Parameter Name="SubMenuName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationOfFEMASubModuleDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="SubMenuName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="FormSummaryDocumentationUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FormSummaryDocumentationId" Type="int" Mode="In" />
+    <Parameter Name="TopicName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubMenuName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GetEndUserLicenseAggrement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GetPrivacyPolicy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GetSubscriptionPolicy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GetTermsCondition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GSRNotificationAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="GSRNotificationNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="GSRNotificationName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="GSRNotificationDate" Type="datetime" Mode="In" />
+    <Parameter Name="GSRNotificationEffectiveDate" Type="datetime" Mode="In" />
+    <Parameter Name="GSRNotificationTypeId" Type="int" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GSRNotificationDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GSRNotificationId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GSRNotificationGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GSRNotificationId" Type="int" Mode="In" />
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="GSRNotificationTypeGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GSRNotificationTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GSRNotificationUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GSRNotificationId" Type="int" Mode="In" />
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="GSRNotificationNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="GSRNotificationName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="GSRNotificationDate" Type="datetime" Mode="In" />
+    <Parameter Name="GSRNotificationEffectiveDate" Type="datetime" Mode="In" />
+    <Parameter Name="GSRNotificationTypeId" Type="int" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="IndexAmendmentAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Regulationid" Type="int" Mode="In" />
+    <Parameter Name="NotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentContent" Type="xml" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="IndexAmendmentDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="IndexAmendmentGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="Regulationid" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="IndexAmendmentUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="Regulationid" Type="int" Mode="In" />
+    <Parameter Name="NotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentContent" Type="xml" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="KeyDefinitionEventAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CommonFieldDefinitionEventName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CommonFieldModuleIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DefinitionName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DefinitionAuthorNote" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DefinitionContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="EventName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="EventDate" Type="datetime" Mode="In" />
+    <Parameter Name="EventAuthorNote" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="NotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="GSRNotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FDICircularIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PressNoteIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ActIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MasterDirectionIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="APDIRCircularIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="KeyDefinitionEventDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="KeyDefinitionEventId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="KeyDefinitionEventGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="KeyDefinitionEventId" Type="int" Mode="In" />
+    <Parameter Name="CommonFieldDefinitionEventName" Type="nvarchar" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="KeyDefinitionEventUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="KeyDefinitionEventId" Type="int" Mode="In" />
+    <Parameter Name="CommonFieldDefinitionEventName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CommonFieldModuleIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DefinitionName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DefinitionAuthorNote" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DefinitionContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="EventName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="EventDate" Type="datetime" Mode="In" />
+    <Parameter Name="EventAuthorNote" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="NotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="GSRNotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FDICircularIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PressNoteIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ActIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MasterDirectionIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="APDIRCircularIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="LatestNewsGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="lo_SearchCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RegionalOffice" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ForeignCompanyName" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ComanyActivites" Type="varchar(max)" Mode="In" />
+    <Parameter Name="IndiaAddress" Type="varchar(max)" Mode="In" />
+    <Parameter Name="StartRowIndex" Type="int" Mode="In" />
+    <Parameter Name="MaximumRows" Type="int" Mode="In" />
+    <Parameter Name="SortExpression" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="LoginHistoryAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LoginFrom" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="AccessToken" Type="nvarchar" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="LoginWithAdmin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="LoginWithMobile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="MobileOTP" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="LoginWithUserName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="Logout" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AccessToken" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ManualAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ManualName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ManualDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ManualId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ManualGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ManualId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="ManualUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ManualId" Type="int" Mode="In" />
+    <Parameter Name="ManualName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterCircularName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterCircularId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterCircularId" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularDetailDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterCircularDetailId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterCircularDetailId" Type="int" Mode="In" />
+    <Parameter Name="MasterCircularId" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterCircularDetailId" Type="int" Mode="In" />
+    <Parameter Name="MasterCircularId" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterCircularId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularOfFEMASubModuleDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterCircularUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterCircularId" Type="int" Mode="In" />
+    <Parameter Name="MasterCircularName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionChapterAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="Chapter" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterChapterId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionChapterDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionChapterGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionChapterUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="Chapter" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterChapterId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionFAQAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="FAQId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionFAQDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionFAQId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionFAQGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionFAQId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionFAQUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionFAQId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="FAQId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionIndexAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="IndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="IndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterIndexId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionIndexDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionIndexId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionIndexGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionIndexId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionIndexUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionIndexId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="IndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Indexname" Type="nvarchar" Mode="In" />
+    <Parameter Name="IndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionOfFEMASubModuleDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionSubIndexAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionIndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubIndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubIndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionSubIndexDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionSubIndexGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionIndexId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionSubIndexUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionIndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubIndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubIndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MasterDirectionUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MDIndexAmendmentAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="NotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentContent" Type="xml" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdatedInsertedByRBI" Type="bit" Mode="In" />
+    <Parameter Name="UpdatedInsertedDateByRBI" Type="datetime" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MDIndexAmendmentDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MDIndexAmendmentGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="MDIndexAmendmentUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterDirectionIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="NotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="MasterDirectionChapterId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionIndexId" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentContent" Type="xml" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="UpdatedInsertedByRBI" Type="bit" Mode="In" />
+    <Parameter Name="UpdatedInsertedDateByRBI" Type="datetime" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="NICCodeAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NICCodeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="NICCodeDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NICCodeId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="NICCodeGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NICCodeId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="NICCodeUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NICCodeId" Type="int" Mode="In" />
+    <Parameter Name="NICCodeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="NotificationAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Regulationid" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="NotificationNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="NotificationName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="NotificationDate" Type="datetime" Mode="In" />
+    <Parameter Name="NotificationEffectiveDate" Type="datetime" Mode="In" />
+    <Parameter Name="NotificationTypeId" Type="int" Mode="In" />
+    <Parameter Name="GSRNo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="GSRDate" Type="datetime" Mode="In" />
+    <Parameter Name="NotificationPDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="GSRPDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="SectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubSectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="NotificationDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NotificationId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="NotificationGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NotificationId" Type="int" Mode="In" />
+    <Parameter Name="RegulationId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="NotificationTypeGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NotificationTypeId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="NotificationUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NotificationId" Type="int" Mode="In" />
+    <Parameter Name="Regulationid" Type="int" Mode="In" />
+    <Parameter Name="MasterDirectionId" Type="int" Mode="In" />
+    <Parameter Name="NotificationNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="NotificationName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="NotificationDate" Type="datetime" Mode="In" />
+    <Parameter Name="NotificationEffectiveDate" Type="datetime" Mode="In" />
+    <Parameter Name="NotificationTypeId" Type="int" Mode="In" />
+    <Parameter Name="GSRNo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="GSRDate" Type="datetime" Mode="In" />
+    <Parameter Name="NotificationPDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="GSRPDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="SectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubSectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="OTPUpdateForLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="MobileOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="OTPUpdateForUserProfile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="MobileOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="EmailOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsVerified" Type="bit" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PackageGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PackageId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PenaltyDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PenaltyDetailID" Type="int" Mode="In" />
+    <Parameter Name="CalculatorID" Type="int" Mode="In" />
+    <Parameter Name="CalculatorSubTopicID" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="Policy_AddUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Content" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="PressNoteName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PressNoteDate" Type="datetime" Mode="In" />
+    <Parameter Name="PressNoteEffectiveDate" Type="datetime" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="SectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubSectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteAPDIRCircularAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteAPDIRCircularDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteAPDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteAPDIRCircularGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteAPDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteAPDIRCircularUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteAPDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="APDIRCircularId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteNotificationAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="NotificationId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteNotificationDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteNotificationId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteNotificationGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteNotificationId" Type="int" Mode="In" />
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteNotificationUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteNotificationId" Type="int" Mode="In" />
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="NotificationId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="PressNoteUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PressNoteId" Type="int" Mode="In" />
+    <Parameter Name="PressNoteNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="PressNoteName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PressNoteDate" Type="datetime" Mode="In" />
+    <Parameter Name="PressNoteEffectiveDate" Type="datetime" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="SectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubSectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBICompoundingOrderAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ApplicantName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="OrderGist" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Topic" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FEMRegulationRuleNo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="OrderDate" Type="datetime" Mode="In" />
+    <Parameter Name="PenaltyAmount" Type="decimal" Mode="In" />
+    <Parameter Name="Regional_CentralOfficeOfRBI" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBICompoundingOrderDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBICompoundingOrderId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBICompoundingOrderGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBICompoundingOrderId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBICompoundingOrderUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBICompoundingOrderId" Type="int" Mode="In" />
+    <Parameter Name="ApplicantName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="OrderGist" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Topic" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="FEMRegulationRuleNo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="OrderDate" Type="datetime" Mode="In" />
+    <Parameter Name="PenaltyAmount" Type="decimal" Mode="In" />
+    <Parameter Name="Regional_CentralOfficeOfRBI" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIDataAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBIDataName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Excel" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIDataDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBIDataId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIDataDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBIDataId" Type="int" Mode="In" />
+    <Parameter Name="Month" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="int" Mode="In" />
+    <Parameter Name="Excel" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIDataDetailDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBIDataDetailId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIDataDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBIDataDetailId" Type="int" Mode="In" />
+    <Parameter Name="RBIDataId" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="int" Mode="In" />
+    <Parameter Name="Month" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIDataDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBIDataDetailId" Type="int" Mode="In" />
+    <Parameter Name="RBIDataId" Type="int" Mode="In" />
+    <Parameter Name="Month" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="int" Mode="In" />
+    <Parameter Name="Excel" Type="nvarchar" Mode="In" />
+    <Parameter Name="PDF" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIDataGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBIDataId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIDataUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBIDataId" Type="int" Mode="In" />
+    <Parameter Name="RBIDataName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Excel" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBIFAQOfFEMASubModuleDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBILiaisonOfficeAddFromXML" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBILiaisonOffices" Type="xml" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="RBILiaisonOfficesResult" Type="xml" Mode="InOut" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RBILiaisonOfficeGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RBILiaisonOfficeId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RegulationAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RegulationName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="RegulationNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PublicationDate" Type="datetime" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RegulationDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RegulationId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RegulationGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RegulationId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RegulationOfFEMASubModuleDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RegulationUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RegulationId" Type="int" Mode="In" />
+    <Parameter Name="RegulationName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="RegulationNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="Year" Type="nvarchar" Mode="In" />
+    <Parameter Name="PublicationDate" Type="datetime" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="RulesNo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Year" Type="int" Mode="In" />
+    <Parameter Name="PublicationDate" Type="datetime" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesIndexAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="IndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Indexname" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterIndexId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesIndexAmendmentAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="GSRNotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentContent" Type="xml" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesIndexAmendmentDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesIndexAmendmentGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesIndexAmendmentUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesIndexAmendmentId" Type="int" Mode="In" />
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="GSRNotificationIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexAmendmentContent" Type="xml" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesIndexDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesIndexGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesIndexUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="IndexNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Indexname" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="IndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesOfFEMASubModuleDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FEMASubModuleOfModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesSubIndexAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubIndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubIndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesSubIndexDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesSubIndexGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesSubIndexUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="IndexId" Type="int" Mode="In" />
+    <Parameter Name="SubIndexNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="SubIndexName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SubIndexContent" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SaveAfterSubIndexId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="RulesUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RulesId" Type="int" Mode="In" />
+    <Parameter Name="RulesName" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="RulesNo" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Year" Type="int" Mode="In" />
+    <Parameter Name="PublicationDate" Type="datetime" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SearchAutoCompleteGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SearchText" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="SearchGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SectorAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SectorDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SectorId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SectorDetailAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SectorId" Type="int" Mode="In" />
+    <Parameter Name="SubSectorId" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="int" Mode="In" />
+    <Parameter Name="PressNoteId" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="NotificationId" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="APDIRCircularId" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SectorDetailDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SectorDetailId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SectorDetailGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SectorDetailId" Type="int" Mode="In" />
+    <Parameter Name="SectorId" Type="int" Mode="In" />
+    <Parameter Name="SubSectorId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SectorDetailUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SectorDetailId" Type="int" Mode="In" />
+    <Parameter Name="SectorId" Type="int" Mode="In" />
+    <Parameter Name="SubSectorId" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="int" Mode="In" />
+    <Parameter Name="PressNoteId" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="NotificationId" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="APDIRCircularId" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SectorGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SectorId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SectorUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SectorId" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubcriptionPackageInformationGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubPackageId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SubscriptionAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PackageId" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubscriptionId" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PackageId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionHistoryMailSentUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubscriptionHistoryId" Type="int" Mode="In" />
+    <Parameter Name="IsMailSentToUser" Type="bit" Mode="In" />
+    <Parameter Name="IsMailSentToAdmin" Type="bit" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionMailSentUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubscriptionId" Type="int" Mode="In" />
+    <Parameter Name="IsMailSentToUser" Type="bit" Mode="In" />
+    <Parameter Name="IsMailSentToAdmin" Type="bit" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionPackageAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PackageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PackageAmount" Type="decimal" Mode="In" />
+    <Parameter Name="PackageDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionPackageDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PackageId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionPackageGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PackageId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionPackageUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PackageId" Type="int" Mode="In" />
+    <Parameter Name="PackageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PackageAmount" Type="decimal" Mode="In" />
+    <Parameter Name="PackageDetail" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionPolicy_Add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Content" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubscriptionUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubscriptionId" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="PaymentDate" Type="datetime" Mode="In" />
+    <Parameter Name="IsExpired" Type="bit" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubSectorAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SectorId" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubSectorDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubSectorId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubSectorGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubSectorId" Type="int" Mode="In" />
+    <Parameter Name="SectorIds" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubSectorUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubSectorId" Type="int" Mode="In" />
+    <Parameter Name="SectorId" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SubTopicGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubTopicId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SupportTicketAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+    <Parameter Name="SubTopicId" Type="int" Mode="In" />
+    <Parameter Name="QueryTitle" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="DepartmentId" Type="int" Mode="In" />
+    <Parameter Name="Query" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SupportTicketDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupportTicketId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SupportTicketGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupportTicketId" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="IsForPostQuery" Type="bit" Mode="In" />
+    <Parameter Name="TopicId" Type="int" Mode="In" />
+    <Parameter Name="SubTopicId" Type="int" Mode="In" />
+    <Parameter Name="DepartmentId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SupportTicketMailSentUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupportTicketId" Type="int" Mode="In" />
+    <Parameter Name="IsMailSentToAdmin" Type="bit" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SupportTicketReplyAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupportTicketId" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="QueryReply" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="EmailId" Type="nvarchar" Mode="InOut" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SupportTicketReplyDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupportTicketReplyId" Type="int" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SupportTicketReplyGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupportTicketId" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SupportTicketReplyMailSentUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupportTicketReplyId" Type="int" Mode="In" />
+    <Parameter Name="IsMailSentToAdmin" Type="bit" Mode="In" />
+    <Parameter Name="IsMailSentToUser" Type="bit" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="SupportTicketSubTopicGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupportTicketSubTopicId" Type="int" Mode="In" />
+    <Parameter Name="FEMAModuleId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="TermsCondition_Add" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Content" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="UserGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="UserLegalAggrementAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="LegalAggrement" Type="bit" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="UserProfileAdd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RoleId" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="MobileOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="EmailOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ProfessionalQualificationId" Type="int" Mode="In" />
+    <Parameter Name="City" Type="nvarchar" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="UserProfileGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="SearchText" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="PageNumber" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="IsPagingRequired" Type="bit" Mode="In" />
+    <Parameter Name="OrderBy" Type="nvarchar" Mode="In" />
+    <Parameter Name="OrderByDirection" Type="nvarchar" Mode="In" />
+    <Parameter Name="TotalPageCount" Type="int" Mode="InOut" />
+    <Parameter Name="TotalRecord" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="UserProfileUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ProfessionalQualificationId" Type="int" Mode="In" />
+    <Parameter Name="City" Type="nvarchar" Mode="In" />
+    <Parameter Name="MobileOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="EmailOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+    <Parameter Name="IsDeleted" Type="bit" Mode="In" />
+    <Parameter Name="ModifiedBy" Type="int" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="VerifyAccountForMobile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Mobile" Type="nvarchar" Mode="In" />
+    <Parameter Name="MobileOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="EmailOTP" Type="nvarchar" Mode="In" />
+    <Parameter Name="Result" Type="int" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="DemsifyModelStoreContainer" />
+</Schema>

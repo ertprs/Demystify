@@ -1,0 +1,367 @@
+G:\DemystifyFema\DemystifyFema.Service\bin\ApplicationInsights.config
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\csc.exe
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\System.Collections.Immutable.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\System.Reflection.Metadata.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\vbc.exe
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\VBCSCompiler.exe
+G:\DemystifyFema\DemystifyFema.Service\bin\roslyn\VBCSCompiler.exe.config
+G:\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.dll.config
+G:\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.pdb
+G:\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csprojResolveAssemblyReference.cache
+G:\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.dll
+G:\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.pdb
+G:\DemystifyFema\DemystifyFema.Service\bin\Antlr3.Runtime.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.SqlServer.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Agent.Intercept.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.DependencyCollector.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Web.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.WindowsServer.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.ApplicationInsights.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Core.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Cookies.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Facebook.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Google.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.OAuth.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Twitter.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Web.Infrastructure.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Newtonsoft.Json.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Owin.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Net.Http.Formatting.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Helpers.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.Owin.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.WebHost.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Mvc.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Optimization.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Razor.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Deployment.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Razor.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\WebGrease.dll
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.DependencyCollector.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Web.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.WindowsServer.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.ApplicationInsights.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Newtonsoft.Json.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Net.Http.Formatting.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Helpers.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.WebHost.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Mvc.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Optimization.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Razor.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Deployment.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Razor.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Antlr3.Runtime.pdb
+G:\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.SqlServer.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Core.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Facebook.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Cookies.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.OAuth.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Google.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Twitter.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.Owin.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\ApplicationInsights.config
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\csc.exe
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\vbc.exe
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\VBCSCompiler.exe
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.dll.config
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.pdb
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Antlr3.Runtime.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.SqlServer.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Web.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Newtonsoft.Json.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Owin.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Net.Http.Formatting.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Helpers.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.Owin.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.WebHost.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Mvc.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Optimization.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Razor.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Razor.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\WebGrease.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Web.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Newtonsoft.Json.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Net.Http.Formatting.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Helpers.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.WebHost.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Mvc.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Optimization.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Razor.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Razor.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Antlr3.Runtime.pdb
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.SqlServer.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.Owin.xml
+D:\Projects\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csprojAssemblyReference.cache
+D:\Projects\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csproj.CoreCompileInputs.cache
+D:\Projects\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csproj.CopyComplete
+D:\Projects\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.dll
+D:\Projects\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.pdb
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\ApplicationInsights.config
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\csc.exe
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\System.Collections.Immutable.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\System.Reflection.Metadata.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\vbc.exe
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\VBCSCompiler.exe
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\roslyn\VBCSCompiler.exe.config
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.dll.config
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\DemystifyFema.Service.pdb
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Antlr3.Runtime.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.SqlServer.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.DependencyCollector.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Web.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.WindowsServer.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.ApplicationInsights.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Google.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Web.Infrastructure.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Newtonsoft.Json.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Owin.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Net.Http.Formatting.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Helpers.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.Owin.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.WebHost.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Mvc.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Optimization.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Razor.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Deployment.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Razor.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\WebGrease.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.DependencyCollector.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.Web.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AI.WindowsServer.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.ApplicationInsights.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Newtonsoft.Json.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Net.Http.Formatting.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Helpers.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.WebHost.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Mvc.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Optimization.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Razor.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Deployment.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.WebPages.Razor.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Antlr3.Runtime.pdb
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\EntityFramework.SqlServer.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Google.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\bin\System.Web.Http.Owin.xml
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csprojAssemblyReference.cache
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csproj.CoreCompileInputs.cache
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csproj.CopyComplete
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.dll
+G:\Bhaumik\DemystifyFema\DemystifyFema.Service\obj\Release\DemystifyFema.Service.pdb
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\ApplicationInsights.config
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\csc.exe
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\vbc.exe
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\DemystifyFema.Service.dll.config
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\DemystifyFema.Service.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\DemystifyFema.Service.pdb
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Antlr3.Runtime.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\EntityFramework.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\EntityFramework.SqlServer.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.Web.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Newtonsoft.Json.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Owin.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\paytm.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Net.Http.Formatting.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Helpers.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Http.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Http.Owin.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Http.WebHost.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Mvc.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Optimization.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Razor.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.WebPages.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\WebGrease.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.Web.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Newtonsoft.Json.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Net.Http.Formatting.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Helpers.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Http.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Http.WebHost.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Mvc.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Optimization.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Razor.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.WebPages.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Antlr3.Runtime.pdb
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\EntityFramework.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\EntityFramework.SqlServer.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\bin\System.Web.Http.Owin.xml
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csprojAssemblyReference.cache
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csproj.CoreCompileInputs.cache
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\obj\Release\DemystifyFema.Service.csproj.CopyComplete
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\obj\Release\DemystifyFema.Service.dll
+D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\obj\Release\DemystifyFema.Service.pdb

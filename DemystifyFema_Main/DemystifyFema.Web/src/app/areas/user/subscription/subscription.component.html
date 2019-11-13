@@ -1,0 +1,273 @@
+﻿<!--<div class="inner_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner_page_titel text-center">Subscription</div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-12">
+                <div class="card  l_r_from contact_us_wapper poupu_modules05 no-padding">
+                    <div class="fdi_box_poupu">
+                        <div class="card">
+                            <ul class="nav nav-tabs" role="tablist" style="margin-bottom: 40px;">
+                                <li role="presentation" class="border-top-bottom" (click)="OnClickModuleTab('features')"><a href="#tab1" [class.tab-active]="moduleTab == 'features'" aria-controls="tab1" role="tab" data-toggle="tab">Features</a></li>
+                                <li role="presentation" class="border-top-bottom" (click)="OnClickModuleTab('ordernow')"><a href="#tab2" [class.tab-active]="moduleTab == 'ordernow'" aria-controls="tab2" role="tab" data-toggle="tab">Order Now</a></li>
+                            </ul>
+                            <div class="tab-content no-padding">
+                                <div role="tabpanel" class="tab-pane" [class.active]="moduleTab == 'features'" id="tab1">
+                                    <div class="row justify-content-md-center">
+                                        <div class="col-md-10">
+                                            <label>Features</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" [class.active]="moduleTab == 'ordernow'" id="tab2">
+                                    <div class="row justify-content-md-center" *ngIf="!isSubscriptionRequested && !isSubscribedUser">
+                                        <div class="col-md-10">
+                                            <form novalidate (ngSubmit)="OnSubmitSupportTicket(frmSubscription)" [formGroup]="frmSubscription">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group form-md-line-input no-margin">
+                                                            <label>Package</label>
+                                                            <select class="form-control" formControlName="PackageId">
+                                                                <option *ngFor="let item of packages" [value]="item.Value">{{item.Text}}</option>
+                                                            </select>
+                                                        </div>
+                                                        <span class="help-block has-error" *ngIf="frmSubscription.controls.PackageId.errors?.required && isSubmited"> Please select Package </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-actions top-padding-20px">
+                                                    <input class="btn btn-primary" type="submit" value="Submit">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center" *ngIf="isSubscriptionRequested">
+                                        <div class="col-md-10">
+                                            <div class="alert alert-success">
+                                                <a class="close" data-close="alert"></a>
+                                                <span>Your subscription successfully requested.</span><br/>
+                                                <span>Thank you.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center" *ngIf="isSubscribedUser">
+                                        <div class="col-md-10">
+                                            <div class="alert alert-success">
+                                                <a class="close" data-close="alert"></a>
+                                                <span>You have already activated subscription.</span><br />
+                                                <span>Thank you.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<div class="subscribe-sec">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12" style="background-color:#f5f5f5;">
+                <div class="subscripation_top_text text-center">
+                    <div class="subscri-title">Subscription</div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="search_result">
+                    <div class="card">
+                        <div class="row text-center">
+                            <div class="col-lg-12 ">
+                                <div class="text-center">
+                                    <div class="lg-def">  Demystify FEMA </div>
+                                    <div class="mb-7">We manage your business</div>
+                                    <div class="mb-26"> “Learn the gamut of Foreign Exchange Law in India”</div>
+                                </div>
+                                <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                    <li role="presentation" (click)="OnClickModuleTab('features')"><a href="#tab1" [class.active]="moduleTab == 'features'" aria-controls="tab1" role="tab" data-toggle="tab">Features</a></li>
+                                    <li role="presentation" (click)="OnClickModuleTab('ordernow')"><a href="#tab2" [class.active]="moduleTab == 'ordernow'" aria-controls="tab2" role="tab" data-toggle="tab">Order Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane" [class.active]="moduleTab == 'features'" id="tab1">
+                                <div class="subscripation_pointe_titel"><span>FEMA Manual </span> comprising of </div>
+                                <ul class="subscripation_pointe">
+                                    <li class="ic">FEMA Regulations & FEMA Notifications </li>
+                                    <li class="ic">Master Directions, Master Circulars & AP DIR Circulars,</li>
+                                    <li class="ic">Foreign Direct Investment Policy or Circulars</li>
+                                    <li class="ic">DIPP Press Notes</li>
+                                    <li class="ic">FEMA Rules</li>
+                                </ul>
+                                <div class="subscripation_pointe_titel"><span>FEMA Booklet </span>comprising of</div>
+                                <ul class="subscripation_pointe">
+                                    <li><span>Sectoral Snapshot </span> on Foreign Direct Investment</li>
+                                    <li><span>Compounding Orders </span> issued by the Reserve Bank of India</li>
+                                    <li><span>Key Definitions </span> under the Foreign Exchange Laws in India</li>
+                                    <li><span>FETERS Codes </span>  i.e. inward and outward purpose codes for undertaking foreign exchange remittances in and out of India</li>
+                                    <li><span>RBI Data releases on</span> Overseas Investment, External Commercial Borrowings, Liaison Office, Branch office.</li>
+                                </ul>
+
+                                <div class="subscripation_pointe_titel_1"><span>Real-time updates</span> to all the users on Foreign Exchange Laws in India</div>
+                                <div class="subscripation_pointe_titel_1">
+                                    <span>Compounding Penalty Calculator</span> for calculating penalties for any
+                                    contraventions / violations committed under the Indian Foreign Exchange Law<br />
+                                    i.e. FEMA
+                                </div>
+                                <div class="subscripation_pointe_titel_1">
+                                    <span>Forms, Summaries, Documentation and Procedures	</span> under the
+                                    Foreign exchange Law in India.
+                                </div>
+                                <div class="subscripation_pointe_titel_1">
+                                    <span>Compare Features</span> &nbsp;&nbsp;  i.e. comparison of FEMA Regulations with Master
+                                    Directions or Foreign Direct Investment Policy / Circular
+                                </div>
+                                <div class="subscripation_pointe_titel_1">
+                                    <span>Post A Query Feature     </span> &nbsp;&nbsp; i.e. Subscribed Users will be able to post their basic
+                                    queries on matters concerning Foreign Exchange Law in India.
+                                </div>
+                            </div>
+                        <div role="tabpanel" class="tab-pane" [class.active]="moduleTab == 'ordernow'" id="tab2">
+                            <div class="card order_now_from l_r_from no-pad">
+                                <div class="row" *ngIf="!isSubscriptionRequested && !isSubscribedUser">
+                                    <div class="col-lg-6 offset-lg-3 no-pad">
+
+                                        <!--<form #form method="post" action="https://securegw-stage.paytm.in/order/process" name="paytm" id="paytm">
+                                        <table border="1">
+                                            <tbody>
+                                            <input type="hidden" name="TXN_AMOUNT" value="ORDER_TRANSACTION_AMOUNT">
+                                            <input type="hidden" formControlName="MID" value="kVZEAA36001323848834" />
+                                            <input type="hidden" formControlName="WEBSITE" value="WEBSTAGING" />
+                                            <input type="hidden" formControlName="INDUSTRY_TYPE_ID" value="Retail" />
+                                            <input type="hidden" formControlName="CHANNEL_ID" value="WEB" />
+                                            <input type="hidden" formControlName="ORDER_ID" value="ORDER_001" />
+                                            <input type="hidden" formControlName="CUST_ID" value="CUST_002" />
+                                            <input type="hidden" formControlName="MOBILE_NO" value="8732990900" />
+                                            <input type="hidden" formControlName="EMAIL" value="jayeshp4gvm@gmail.com" />
+                                            <input type="hidden" formControlName="CALLBACK_URL" value="http://localhost:4200/home" />
+                                            <input type="hidden" name="CHECKSUMHASH" value="GENERATED_CHECKSUM_VALUE">
+                                            </tbody>
+                                        </table>
+                                        <button type="submit" class="btn btn-primary sub" (click)="form.submit()">Submit</button>-->
+
+                                        <!--<button type="submit" class="btn btn-primary sub"><i class="fa fa-paper-plane" aria-hidden="true"></i> Pay </button>-->
+                                        <!--<script type="text/javascript">
+                                                    document.paytm.submit();
+                                                </script>-->
+                                        <!--</form>-->
+
+
+                                        <!--<form novalidate (ngSubmit)="OnSubmitSupportTicket(frmSubscription)" [formGroup]="frmSubscription">
+                                            <div>
+                                                <input type="hidden" formControlName="MID" value="kVZEAA36001323848834" />
+                                                <input type="hidden" formControlName="WEBSITE" value="WEBSTAGING" />
+                                                <input type="hidden" formControlName="INDUSTRY_TYPE_ID" value="Retail" />
+                                                <input type="hidden" formControlName="CHANNEL_ID" value="WEB" />
+                                                <input type="hidden" formControlName="ORDER_ID" value="ORDER_001" />
+                                                <input type="hidden" formControlName="CUST_ID" value="CUST_002" />
+                                                <input type="hidden" formControlName="MOBILE_NO" value="8732990900" />
+                                                <input type="hidden" formControlName="EMAIL" value="jayeshp4gvm@gmail.com" />
+                                                <input type="hidden" formControlName="CALLBACK_URL" value="http://localhost:4200/home" />
+                                            </div>
+                                            <div class="row text-center pt10">
+                                                <div class="col-md-6">
+                                                    <div class="">
+                                                        <button type="submit" class="btn btn-primary sub"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>-->
+
+
+                                        <form novalidate (ngSubmit)="OnSubmitSupportTicket(frmSubscription)" [formGroup]="frmSubscription">
+                                            <div class="form-group select_fdi_menu select_order">
+                                                <label for="name" class="package">
+                                                    Packages*
+                                                </label>
+                                                <select class="form-control" formControlName="PackageId" (change)="searchWithCode($event)">
+                                                    <option *ngFor="let item of packages" [value]="item.Value">{{item.Text}}</option>
+                                                </select>
+                                                <span class="help-block has-error" *ngIf="frmSubscription.controls.PackageId.errors?.required && isSubmited"> Please select Packages </span>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12" [style.display]="isVisible ? 'inline-flex' : 'none'">
+                                                    <div>
+                                                        <div class="pt10">
+                                                            <div class="subscri-title" style="text-align:left">Subscription Packages</div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="pt10">
+                                                                <h4><b>Package Name</b></h4>
+                                                                <p>{{PackageName}}</p>
+                                                                <input type="hidden" formControlName="PackageName" value="PackageName" />
+                                                            </div>
+                                                            <div class="pt10">
+                                                                <h4><b>Amount</b></h4>
+                                                                <p><i class="fa fa-inr"></i>   {{PackageAmount}}</p>
+                                                                <input type="hidden" formControlName="PackageAmount" value="PackageAmount" />
+                                                            </div>
+                                                            <div class="pt10">
+                                                                <h4><b>Detail</b></h4>
+                                                                <p>{{PackageDetail}}</p>
+                                                                <input type="hidden" formControlName="PackageDetail" value="PackageDetail" />
+
+                                                                <input type="hidden" formControlName="MID" value="MID" />
+                                                                <input type="hidden" formControlName="WEBSITE" value="WEBSITE" />
+                                                                <input type="hidden" formControlName="INDUSTRY_TYPE_ID" value="INDUSTRY_TYPE_ID" />
+                                                                <input type="hidden" formControlName="CHANNEL_ID" value="CHANNEL_ID" />
+                                                                <input type="hidden" formControlName="ORDER_ID" value="ORDER_ID" />
+                                                                <input type="hidden" formControlName="CUST_ID" value="CUST_ID" />
+                                                                <input type="hidden" formControlName="MOBILE_NO" value="MOBILE_NO" />
+                                                                <input type="hidden" formControlName="EMAIL" value="EMAIL" />
+                                                                <input type="hidden" formControlName="CALLBACK_URL" value="CALLBACK_URL" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row text-center pt10">
+                                                <div class="col-md-6">
+                                                    <div class="">
+                                                        <button type="submit" class="btn btn-primary sub"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center" *ngIf="isSubscriptionRequested">
+                                    <div class="col-md-10">
+                                        <div class="alert alert-success">
+                                            <a class="close" data-close="alert"></a>
+                                            <span>Your subscription successfully requested.</span><br />
+                                            <span>Thank you.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center" *ngIf="isSubscribedUser">
+                                    <div class="col-md-10">
+                                        <div class="alert alert-success">
+                                            <a class="close" data-close="alert"></a>
+                                            <span>You have already activated subscription.</span><br />
+                                            <span>Thank you.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

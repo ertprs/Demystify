@@ -1,0 +1,1376 @@
+﻿
+8/9/2019 4:13:59 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 55 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/9/2019 5:56:20 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entityg password) in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 6283
+   at DemystifyFema.Service.Repository.AccountRepository.LoginWithUserName(LoginWithUserNameRequest loginWithUserNameRequest) in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Repository\AccountRepository.cs:line 40
+   at DemystifyFema.Service.Controllers.Guest.AccountGuestController.LoginWithUserName(LoginWithUserNameRequest loginWithUserNameRequest) in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Controllers\Guest\AccountGuestController.cs:line 186
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/13/2019 9:42:20 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/13/2019 9:43:26 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/13/2019 9:50:46 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/13/2019 9:51:37 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/21/2019 10:16:47 AM
+ ServiceName : SendAsync 
+ Parameters :  
+	 Version : 1.1 
+	 Content : System.Web.Http.WebHost.HttpControllerHandler+LazyStreamContent 
+	 Method : GET 
+	 RequestUri : http://localhost:51159/admin/api/notifications?PageNumber=3&PageSize=10 
+	 Headers : Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Authorization: Bearer 5FdNnaoyCdkgDMr34Z4xhMcdK+ZdqNWVQkUMqAMkSd0=
+Host: localhost:51159
+Referer: http://localhost:4200/admin/secure/notifications
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Sec-Fetch-Mode: cors
+Origin: http://localhost:4200
+Sec-Fetch-Site: same-site
+ 
+	 Properties : System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+ UserId : 1 
+ Message : Error while send async token. 
+ Description : System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass4b.<ExecuteFunction>b__49()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction(String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.AccessTokenCheck(String accessToken, ObjectParameter isValid) in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 37
+   at DemystifyFema.Service.Repository.LoginHistoryRepository.CheckAccessToken(LoginHistory loginHistory) in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Repository\LoginHistoryRepository.cs:line 34
+   at DemystifyFema.Service.Filter.AuthenticationHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) in G:\Bhaumik\DemystifyFema\DemystifyFema.Service\Filter\AuthenticationHandler.cs:line 41
+
+8/27/2019 10:58:00 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The specified cast from a materialized 'System.Int32' type to the 'System.String' type is not valid.
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 10:58:44 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The specified cast from a materialized 'System.Int32' type to the 'System.String' type is not valid.
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 10:59:22 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The specified cast from a materialized 'System.Int32' type to the 'System.String' type is not valid.
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 11:01:01 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The specified cast from a materialized 'System.Int32' type to the 'System.String' type is not valid.
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 11:27:26 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The specified cast from a materialized 'System.Int32' type to the 'System.String' type is not valid.
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 11:28:11 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The specified cast from a materialized 'System.Int32' type to the 'System.String' type is not valid.
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 11:43:22 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The type parameter 'DemystifyFema.Service.Models.PrivacyPolicyGet_Result' in ExecuteFunction is incompatible with the type 'Edm.String' returned by the function. 
+   at System.Data.Entity.Core.Common.Utils.MetadataHelper.CheckFunctionImportReturnType[TElement](EdmType expectedEdmType, MetadataWorkspace workspace)
+   at System.Data.Entity.Core.Common.Utils.MetadataHelper.GetAndCheckFunctionImportReturnType[TElement](EdmFunction functionImport, Int32 resultSetIndex, MetadataWorkspace workspace)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7751
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 11:50:03 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The type parameter 'DemystifyFema.Service.Models.PrivacyPolicyGet_Result' in ExecuteFunction is incompatible with the type 'Edm.String' returned by the function. 
+   at System.Data.Entity.Core.Common.Utils.MetadataHelper.CheckFunctionImportReturnType[TElement](EdmType expectedEdmType, MetadataWorkspace workspace)
+   at System.Data.Entity.Core.Common.Utils.MetadataHelper.GetAndCheckFunctionImportReturnType[TElement](EdmFunction functionImport, Int32 resultSetIndex, MetadataWorkspace workspace)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7751
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 12:07:58 PM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The type parameter 'DemystifyFema.Service.Models.PrivacyPolicyGet_Result' in ExecuteFunction is incompatible with the type 'Edm.String' returned by the function. 
+   at System.Data.Entity.Core.Common.Utils.MetadataHelper.CheckFunctionImportReturnType[TElement](EdmType expectedEdmType, MetadataWorkspace workspace)
+   at System.Data.Entity.Core.Common.Utils.MetadataHelper.GetAndCheckFunctionImportReturnType[TElement](EdmFunction functionImport, Int32 resultSetIndex, MetadataWorkspace workspace)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7751
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/27/2019 12:12:34 PM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.InvalidOperationException: The type parameter 'DemystifyFema.Service.Models.PrivacyPolicyGet_Result' in ExecuteFunction is incompatible with the type 'Edm.String' returned by the function. 
+   at System.Data.Entity.Core.Common.Utils.MetadataHelper.CheckFunctionImportReturnType[TElement](EdmType expectedEdmType, MetadataWorkspace workspace)
+   at System.Data.Entity.Core.Common.Utils.MetadataHelper.GetAndCheckFunctionImportReturnType[TElement](EdmFunction functionImport, Int32 resultSetIndex, MetadataWorkspace workspace)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7751
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.PrivacyPolicyGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 46
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicyPackage(GetPrivacyPolicyResponse getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 140
+
+8/28/2019 4:16:49 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/28/2019 4:17:02 AM
+ ServiceName : SendOTPForLogin 
+ Parameters :  
+	 Mobile : 6354802250 
+ UserId : 0 
+ Message : Error while sending OTP. (AccountGuestController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.CheckUserExists(String userName, String mobile, ObjectParameter result) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 6370
+   at DemystifyFema.Service.Repository.AccountRepository.CheckUserExists(Account account) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\AccountRepository.cs:line 63
+   at DemystifyFema.Service.Controllers.Guest.AccountGuestController.SendOTPForLogin(SendOTPForLoginRequest sendOTPForLoginRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Guest\AccountGuestController.cs:line 58
+
+8/28/2019 4:17:20 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/28/2019 4:17:45 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/28/2019 4:18:07 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/28/2019 4:19:05 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/28/2019 4:19:38 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/28/2019 4:20:06 AM
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 0 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\UtilityController.cs:line 89
+
+8/28/2019 10:21:36 AM
+ ServiceName : GetEndUserLicenseAggement 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 IsActive :  
+	 IsVerified :  
+	 PageNumber :  
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 0 
+ Message : Error while retrieving End User License Aggement. (TermsConditionController) 
+ Description : System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemystifyFema.Service.Controllers.Guest.TermsConditionController.GetEndUserLicenseAggement(GetEndUserLicenseAggrementRequest getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Guest\TermsConditionController.cs:line 127
+
+8/28/2019 10:25:07 AM
+ ServiceName : GetEndUserLicenseAggement 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 IsActive :  
+	 IsVerified :  
+	 PageNumber :  
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 0 
+ Message : Error while retrieving End User License Aggement. (TermsConditionController) 
+ Description : System.NullReferenceException: Object reference not set to an instance of an object.
+   at DemystifyFema.Service.Controllers.Guest.TermsConditionController.GetEndUserLicenseAggement(GetEndUserLicenseAggrementRequest getEULARequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Guest\TermsConditionController.cs:line 127
+
+8/29/2019 4:11:42 AM
+ ServiceName : LoginWithUserName 
+ Parameters :  
+	 UserName : admin 
+	 Password : kaur@0108 
+	 LoginFrom : WEB 
+ UserId : 0 
+ Message : Error while login. (AccountGuestController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LoginWithUserName(String userName, String password) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 6283
+   at DemystifyFema.Service.Repository.AccountRepository.LoginWithUserName(LoginWithUserNameRequest loginWithUserNameRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\AccountRepository.cs:line 40
+   at DemystifyFema.Service.Controllers.Guest.AccountGuestController.LoginWithUserName(LoginWithUserNameRequest loginWithUserNameRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Guest\AccountGuestController.cs:line 186
+
+8/29/2019 4:11:55 AM
+ ServiceName : LoginWithUserName 
+ Parameters :  
+	 UserName : admin 
+	 Password : kaur@0108 
+	 LoginFrom : WEB 
+ UserId : 0 
+ Message : Error while login. (AccountGuestController) 
+ Description : System.Data.Entity.Core.MetadataException: Unable to load the specified metadata resource.
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.LoadResources(String assemblyName, String resourceName, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoaderCompositeResource.CreateResourceLoader(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataArtifactLoader.Create(String path, ExtensionCheck extensionCheck, String validExtension, ICollection`1 uriRegistry, MetadataArtifactAssemblyResolver resolver)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.SplitPaths(String paths)
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.<>c__DisplayClass2.<Evaluate>b__0()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Result.GetValue()
+   at System.Data.Entity.Core.Common.Utils.Memoizer`2.Evaluate(TArg arg)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetArtifactLoader(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.Metadata.Edm.MetadataCache.GetMetadataWorkspace(DbConnectionOptions effectiveConnectionOptions)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.GetMetadataWorkspace()
+   at System.Data.Entity.Core.Objects.ObjectContext.RetrieveMetadataWorkspaceFromConnection()
+   at System.Data.Entity.Core.Objects.ObjectContext..ctor(EntityConnection connection, Boolean isConnectionConstructor, ObjectQueryExecutionPlanFactory objectQueryExecutionPlanFactory, Translator translator, ColumnMapFactory columnMapFactory)
+   at System.Data.Entity.Internal.InternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   at System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   at DemystifyFema.Service.Models.DemsifyEntities.LoginWithUserName(String userName, String password) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 6283
+   at DemystifyFema.Service.Repository.AccountRepository.LoginWithUserName(LoginWithUserNameRequest loginWithUserNameRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\AccountRepository.cs:line 40
+   at DemystifyFema.Service.Controllers.Guest.AccountGuestController.LoginWithUserName(LoginWithUserNameRequest loginWithUserNameRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Guest\AccountGuestController.cs:line 186
+
+8/29/2019 11:24:45 AM
+ ServiceName : GetTermsCondition 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 IsActive :  
+	 IsVerified :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving terms condition. (TermsConditionAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Procedure or function 'GetTermsCondition' expects parameter '@IsActive', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetTermsCondition(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7817
+   at DemystifyFema.Service.Repository.TermsConditionRepository.GetTermsCondition(TermsCondition termsCondition) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\TermsConditionRepository.cs:line 38
+   at DemystifyFema.Service.Controllers.Admin.TermsConditionAdminController.GetTermsCondition(GetTermsConditionRequest getTermsRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\TermsConditionAdminController.cs:line 107
+
+8/29/2019 11:26:22 AM
+ ServiceName : GetTermsCondition 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 IsActive :  
+	 IsVerified :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving terms condition. (TermsConditionAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Procedure or function 'GetTermsCondition' expects parameter '@IsActive', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetTermsCondition(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7817
+   at DemystifyFema.Service.Repository.TermsConditionRepository.GetTermsCondition(TermsCondition termsCondition) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\TermsConditionRepository.cs:line 38
+   at DemystifyFema.Service.Controllers.Admin.TermsConditionAdminController.GetTermsCondition(GetTermsConditionRequest getTermsRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\TermsConditionAdminController.cs:line 107
+
+8/29/2019 11:27:26 AM
+ ServiceName : GetTermsCondition 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 IsActive :  
+	 IsVerified :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving terms condition. (TermsConditionAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Procedure or function 'GetTermsCondition' expects parameter '@IsActive', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetTermsCondition(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7817
+   at DemystifyFema.Service.Repository.TermsConditionRepository.GetTermsCondition(TermsCondition termsCondition) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\TermsConditionRepository.cs:line 38
+   at DemystifyFema.Service.Controllers.Admin.TermsConditionAdminController.GetTermsCondition(GetTermsConditionRequest getTermsRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\TermsConditionAdminController.cs:line 107
+
+8/29/2019 11:29:57 AM
+ ServiceName : GetTermsCondition 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 IsActive :  
+	 IsVerified :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving terms condition. (TermsConditionAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Procedure or function 'GetTermsCondition' expects parameter '@PageNumber', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetTermsCondition(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7817
+   at DemystifyFema.Service.Repository.TermsConditionRepository.GetTermsCondition(TermsCondition termsCondition) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\TermsConditionRepository.cs:line 38
+   at DemystifyFema.Service.Controllers.Admin.TermsConditionAdminController.GetTermsCondition(GetTermsConditionRequest getTermsRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\TermsConditionAdminController.cs:line 107
+
+8/29/2019 11:30:00 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'DemsifyModel.GetPrivacyPolicy_Result'. A member of the type, 'ID', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateFunctionImportStructuralTypeColumnMap(DbDataReader storeDataReader, FunctionImportMappingNonComposable mapping, Int32 resultSetIndex, EntitySet entitySet, StructuralType baseStructuralType)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.CreateColumnMap(DbDataReader storeDataReader, Int32 resultSetIndex)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetPrivacyPolicy(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7784
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.GetPrivacyPolicy(PrivacyPolicy privatePolicy) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 35
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicy(GetPrivacyPolicyRequest getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 107
+
+8/29/2019 11:36:37 AM
+ ServiceName : GetTermsCondition 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 IsActive :  
+	 IsVerified :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving terms condition. (TermsConditionAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Procedure or function 'GetTermsCondition' expects parameter '@PageNumber', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetTermsCondition(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7817
+   at DemystifyFema.Service.Repository.TermsConditionRepository.GetTermsCondition(TermsCondition termsCondition) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\TermsConditionRepository.cs:line 38
+   at DemystifyFema.Service.Controllers.Admin.TermsConditionAdminController.GetTermsCondition(GetTermsConditionRequest getTermsRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\TermsConditionAdminController.cs:line 107
+
+8/29/2019 11:36:39 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'DemsifyModel.GetPrivacyPolicy_Result'. A member of the type, 'ID', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateFunctionImportStructuralTypeColumnMap(DbDataReader storeDataReader, FunctionImportMappingNonComposable mapping, Int32 resultSetIndex, EntitySet entitySet, StructuralType baseStructuralType)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.CreateColumnMap(DbDataReader storeDataReader, Int32 resultSetIndex)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetPrivacyPolicy(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7784
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.GetPrivacyPolicy(PrivacyPolicy privatePolicy) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 35
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicy(GetPrivacyPolicyRequest getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 107
+
+8/29/2019 11:41:23 AM
+ ServiceName : GetTermsCondition 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving terms condition. (TermsConditionAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: An error occurred while executing the command definition. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Procedure or function 'GetTermsCondition' expects parameter '@PageNumber', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetTermsCondition(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord)
+   at DemystifyFema.Service.Repository.TermsConditionRepository.GetTermsCondition(TermsCondition termsCondition)
+   at DemystifyFema.Service.Controllers.Admin.TermsConditionAdminController.GetTermsCondition(GetTermsConditionRequest getTermsRequest)
+
+8/29/2019 11:41:28 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'DemsifyModel.GetPrivacyPolicy_Result'. A member of the type, 'ID', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateFunctionImportStructuralTypeColumnMap(DbDataReader storeDataReader, FunctionImportMappingNonComposable mapping, Int32 resultSetIndex, EntitySet entitySet, StructuralType baseStructuralType)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.CreateColumnMap(DbDataReader storeDataReader, Int32 resultSetIndex)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetPrivacyPolicy(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.GetPrivacyPolicy(PrivacyPolicy privatePolicy)
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicy(GetPrivacyPolicyRequest getPrivacyPolicyRequest)
+
+8/29/2019 11:45:05 AM
+ ServiceName : GetTermsCondition 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving terms condition. (TermsConditionAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'DemsifyModel.GetTermsCondition_Result'. A member of the type, 'ID', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateFunctionImportStructuralTypeColumnMap(DbDataReader storeDataReader, FunctionImportMappingNonComposable mapping, Int32 resultSetIndex, EntitySet entitySet, StructuralType baseStructuralType)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.CreateColumnMap(DbDataReader storeDataReader, Int32 resultSetIndex)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetTermsCondition(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord)
+   at DemystifyFema.Service.Repository.TermsConditionRepository.GetTermsCondition(TermsCondition termsCondition)
+   at DemystifyFema.Service.Controllers.Admin.TermsConditionAdminController.GetTermsCondition(GetTermsConditionRequest getTermsRequest)
+
+8/29/2019 11:45:08 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'DemsifyModel.GetPrivacyPolicy_Result'. A member of the type, 'ID', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateFunctionImportStructuralTypeColumnMap(DbDataReader storeDataReader, FunctionImportMappingNonComposable mapping, Int32 resultSetIndex, EntitySet entitySet, StructuralType baseStructuralType)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.CreateColumnMap(DbDataReader storeDataReader, Int32 resultSetIndex)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetPrivacyPolicy(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.GetPrivacyPolicy(PrivacyPolicy privatePolicy)
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicy(GetPrivacyPolicyRequest getPrivacyPolicyRequest)
+
+8/29/2019 11:49:01 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'DemsifyModel.GetPrivacyPolicy_Result'. A member of the type, 'ID', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateFunctionImportStructuralTypeColumnMap(DbDataReader storeDataReader, FunctionImportMappingNonComposable mapping, Int32 resultSetIndex, EntitySet entitySet, StructuralType baseStructuralType)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.CreateColumnMap(DbDataReader storeDataReader, Int32 resultSetIndex)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetPrivacyPolicy(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord)
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.GetPrivacyPolicy(PrivacyPolicy privatePolicy)
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicy(GetPrivacyPolicyRequest getPrivacyPolicyRequest)
+
+8/29/2019 11:51:10 AM
+ ServiceName : GetPrivacyPolicyPackage 
+ Parameters :  
+	 ID :  
+	 SearchText :  
+	 PageNumber : 1 
+	 PageSize : 10 
+	 OrderBy :  
+	 OrderByDirection :  
+ UserId : 1 
+ Message : Error while retrieving privacy policy. (PrivacyPolicyAdminController) 
+ Description : System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'DemsifyModel.GetPrivacyPolicy_Result'. A member of the type, 'ID', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateFunctionImportStructuralTypeColumnMap(DbDataReader storeDataReader, FunctionImportMappingNonComposable mapping, Int32 resultSetIndex, EntitySet entitySet, StructuralType baseStructuralType)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.CreateColumnMap(DbDataReader storeDataReader, Int32 resultSetIndex)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.GetPrivacyPolicy(Nullable`1 iD, String searchText, Nullable`1 pageNumber, Nullable`1 pageSize, Nullable`1 isPagingRequired, String orderBy, String orderByDirection, ObjectParameter totalPageCount, ObjectParameter totalRecord) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7784
+   at DemystifyFema.Service.Repository.PrivacyPolicyRepository.GetPrivacyPolicy(PrivacyPolicy privatePolicy) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Repository\PrivacyPolicyRepository.cs:line 35
+   at DemystifyFema.Service.Controllers.Admin.PrivacyPolicyAdminController.GetPrivacyPolicy(GetPrivacyPolicyRequest getPrivacyPolicyRequest) in D:\Projects\Latest DemystifyFema\DemystifyFema_Backup_Bhaumik\DemystifyFema.Service\Controllers\Admin\PrivacyPolicyAdminController.cs:line 107
+
+31-10-2019 17:50:28
+ ServiceName : SendAsync 
+ Parameters :  
+	 Version : 1.1 
+	 Content : System.Web.Http.WebHost.HttpControllerHandler+LazyStreamContent 
+	 Method : POST 
+	 RequestUri : http://localhost:51159/admin/api/apdircirculars/add 
+	 Headers : Cache-Control: no-cache
+Connection: keep-alive
+Accept: */*
+Accept-Encoding: gzip, deflate
+Authorization: Basic YWRtaW46S2F1ckAwMTA4
+Cookie: ss-id=bd/lFyxFCEuThDivY3hA7w==; ss-pid=HfAIqeMbLUCnYAMQZzNpxA==
+Host: localhost:51159
+User-Agent: PostmanRuntime/7.19.0
+Postman-Token: da535e64-6cf2-476d-be22-625b74517555
+ 
+	 Properties : System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+ UserId : 0 
+ Message : Error while send async token. 
+ Description : System.Security.Cryptography.CryptographicException: Length of the data to decrypt is invalid.
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at DemystifyFema.Service.Common.Utility.DecryptStringUsingKey(String sourceString) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Common\Utility.cs:line 76
+   at DemystifyFema.Service.Filter.AuthenticationHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Filter\AuthenticationHandler.cs:line 38
+
+31-10-2019 17:50:35
+ ServiceName : SendAsync 
+ Parameters :  
+	 Version : 1.1 
+	 Content : System.Web.Http.WebHost.HttpControllerHandler+LazyStreamContent 
+	 Method : POST 
+	 RequestUri : http://localhost:51159/admin/api/apdircirculars/add 
+	 Headers : Cache-Control: no-cache
+Connection: keep-alive
+Accept: */*
+Accept-Encoding: gzip, deflate
+Authorization: Basic YWRtaW46S2F1ckAwMTA4
+Cookie: ss-id=bd/lFyxFCEuThDivY3hA7w==; ss-pid=HfAIqeMbLUCnYAMQZzNpxA==
+Host: localhost:51159
+User-Agent: PostmanRuntime/7.19.0
+Postman-Token: 44d2d34d-b424-4da0-9def-b8b90e5785ab
+ 
+	 Properties : System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+ UserId : 0 
+ Message : Error while send async token. 
+ Description : System.Security.Cryptography.CryptographicException: Length of the data to decrypt is invalid.
+   at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at DemystifyFema.Service.Common.Utility.DecryptStringUsingKey(String sourceString) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Common\Utility.cs:line 76
+   at DemystifyFema.Service.Filter.AuthenticationHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Filter\AuthenticationHandler.cs:line 38
+
+06-11-2019 16:26:02
+ ServiceName : GetPaytmChecksum 
+ Parameters :  
+ UserId : 0 
+ Message : Error while generating paytm Checksum. (UtilityController) 
+ Description : paytm.exception.CryptoException: Exception occurred while generating CheckSum. Object reference not set to an instance of an object.
+   at paytm.CheckSum.generateCheckSum(String masterKey, Dictionary`2 parameters)
+   at DemystifyFema.Service.Controllers.UtilityController.GetPaytmChecksum(PaytmRequest getPaytmRequest) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Controllers\UtilityController.cs:line 250
+
+12-11-2019 06:28:59
+ ServiceName : SendAsync 
+ Parameters :  
+	 Version : 1.1 
+	 Content : System.Web.Http.WebHost.HttpControllerHandler+LazyStreamContent 
+	 Method : POST 
+	 RequestUri : http://localhost:51159/api/logout 
+	 Headers : Connection: keep-alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Authorization: Bearer JM4DJvskrIXEQV8IsB9T69vPe5Wv9Yx83lXi7hNGSFOrZ6klG1IqGF8czHYvhPmF
+Host: localhost:51159
+Referer: http://localhost:4200/home
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36
+Origin: http://localhost:4200
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+ 
+	 Properties : System.Collections.Generic.Dictionary`2[System.String,System.Object] 
+ UserId : 1108 
+ Message : Error while send async token. 
+ Description : System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass4b.<ExecuteFunction>b__49()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction(String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.AccessTokenCheck(String accessToken, ObjectParameter isValid) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 37
+   at DemystifyFema.Service.Repository.LoginHistoryRepository.CheckAccessToken(LoginHistory loginHistory) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Repository\LoginHistoryRepository.cs:line 34
+   at DemystifyFema.Service.Filter.AuthenticationHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Filter\AuthenticationHandler.cs:line 41
+
+12-11-2019 06:33:05
+ ServiceName : GetLatestNews 
+ Parameters :  
+ UserId : 1108 
+ Message : Error while retrieving LatesNews. (UtilityController) 
+ Description : System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.LatestNewsGet() in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 7408
+   at DemystifyFema.Service.Repository.LatestNewsRepository.GetLatestNews() in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Repository\LatestNewsRepository.cs:line 16
+   at DemystifyFema.Service.Controllers.UtilityController.GetLatestNews() in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Controllers\UtilityController.cs:line 97
+
+12-11-2019 06:33:25
+ ServiceName : SendOTPForLogin 
+ Parameters :  
+	 Mobile : 8108404389 
+ UserId : 1108 
+ Message : Error while sending OTP. (AccountGuestController) 
+ Description : System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass4b.<ExecuteFunction>b__49()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction(String functionName, ObjectParameter[] parameters)
+   at DemystifyFema.Service.Models.DemsifyEntities.CheckUserExists(String userName, String mobile, ObjectParameter result) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Models\DemystifyFema.Context.cs:line 6370
+   at DemystifyFema.Service.Repository.AccountRepository.CheckUserExists(Account account) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Repository\AccountRepository.cs:line 63
+   at DemystifyFema.Service.Controllers.Guest.AccountGuestController.SendOTPForLogin(SendOTPForLoginRequest sendOTPForLoginRequest) in D:\My Space\POC\Demify\DemystifyFema_Main\DemystifyFema.Service\Controllers\Guest\AccountGuestController.cs:line 58

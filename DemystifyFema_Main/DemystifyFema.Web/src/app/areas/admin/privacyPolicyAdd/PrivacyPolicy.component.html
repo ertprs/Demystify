@@ -1,0 +1,45 @@
+﻿<div class="portlet box green">
+    <div class="portlet-title col-md-12">
+        <div class="caption col-md-6">
+            <i class="fa fa-tasks"></i>Privacy Policy
+        </div>
+    </div>
+    <div class="portlet-body">
+        <form novalidate (ngSubmit)="OnSubmitIndexAmendment(frmPrivacyPolicy)" [formGroup]="frmPrivacyPolicy">
+            <div class="row" style="margin-bottom:15px;">
+                <!--<div class="col-md-12" formArrayName="PrivacyPolicyContent" *ngFor="let item of frmPrivacyPolicy.controls.PrivacyPolicyContent.controls; let i = index;">
+                    <div class="form-group form-md-line-input no-margin" [formGroupName]="i">
+                        <a (click)="RemoveCKEditor(i)" class="close-button" *ngIf="PrivacyPolicyContent && PrivacyPolicyContent.length > 1">x</a>
+                        <ckeditor formControlName="Content"
+                                  [readonly]="false"
+                                  debounce="500">
+                        </ckeditor>
+                    </div>
+                </div>-->
+
+                <div class="col-md-12">
+                    <div class="form-group form-md-line-input no-margin" >
+                        <ckeditor formControlName="Content"
+                                  [readonly]="false"
+                                  debounce="500">
+                        </ckeditor>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--<div class="row">
+                <div class="col-md-12">
+                    <div class="form-group text-right">
+                        <input class="btn btn-default" (click)="AddCKEditor(0, '', 'Add')" type="button" value="Add">
+                    </div>
+                </div>
+            </div>-->
+
+            <div class="form-actions text-right btn-outer-background no-space-right form-actions-bottom-padding row-top-margin">
+                <!--<a (click)="CancelIndexAmendment()" class="btn btn-default">Back To List</a>-->
+                <input class="btn btn-primary btn-cancel-margin" type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</div>
